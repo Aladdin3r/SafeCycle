@@ -5,7 +5,7 @@ import QuizTemplate from '../../components/QuizTemplate/quizTemplate'
 export default function Quiz() {
     return (
         <div>
-            <QuizTemplate
+            <QuizTemplate />
         </div>
     )
 }

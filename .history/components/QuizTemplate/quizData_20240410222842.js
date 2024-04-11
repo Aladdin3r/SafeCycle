@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 export const questions = [
      {
         qText: "While crossing the street, you should",

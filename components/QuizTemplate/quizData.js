@@ -26,6 +26,9 @@ export const questions = [
      {
         qText: "When walking on a road with no sidewalk, you should",
         type: "radio",
-        choices: ["walk on the left side of the road facing traffic", "walk on the right side of the road with traffic", "walk in the middle of the road", "walk on the right side of the road facing traffic"],
+        choices: ["walk on the left side of the road facing traffic", 
+                  "walk on the right side of the road with traffic", 
+                  "walk in the middle of the road", 
+                  "walk on the right side of the road facing traffic"],
      }
 ];

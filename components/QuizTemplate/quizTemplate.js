@@ -1,10 +1,12 @@
 
 
-export function QuizTemplate() {
+export function QuizTemplate({
+    type="radio"
+}) {
     return (
        
         <div>
-            quiz stuff
+            {type === "radio" && <imput type="radio" />}
         </div>    
     
     )

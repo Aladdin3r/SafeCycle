@@ -1,5 +1,4 @@
-
-export const questions = [
+export default questions = [
      {
         qText: "While crossing the street, you should",
         type: "radio",

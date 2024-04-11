@@ -1,8 +1,6 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import Link from 'next/link'
-import Quiz from "./quiz";
-
+import Quiz from "./quiz.js";
 
 
 export default function Home() {
@@ -15,12 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-      <Link href="/quiz">
-    
-          <button>Take Quiz</button>
-      
-        </Link>
-        {/* <Quiz/> */}
+       <Quiz/>
       </main>
     </>
   );

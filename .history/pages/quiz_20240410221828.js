@@ -4,10 +4,8 @@ import QuizTemplate from '../components/QuizTemplate/quizTemplate'
 
 export default function quiz() {
     return (
-        <>
         <div>
             <QuizTemplate />
         </div>
-        </>
     )
 }

@@ -1,8 +1,7 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import quiz from "./quiz";
 import Link from 'next/link'
-import Quiz from "./quiz";
-
 
 
 export default function Home() {

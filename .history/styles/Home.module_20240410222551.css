@@ -4,10 +4,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 20vh;
+  min-height: 100vh;
 }
 
-/* .description {
+.description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -226,4 +226,4 @@
   to {
     transform: rotate(0deg);
   }
-} */
+}

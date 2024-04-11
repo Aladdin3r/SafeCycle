@@ -1,5 +1,5 @@
 import styles from '../styles/quiz.module.css'
-import QuizTemplate from '../components/QuizTemplate/quizTemplate'
+import QuizTemplate from '../components/QuizTemplate'
 
 
 export default function quiz() {

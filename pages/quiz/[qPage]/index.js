@@ -12,7 +12,7 @@ export default function Quiz(params) {
         if(params.qPage && !isNaN(param.qPage)){
             setCurPage(Number(params.qPage));
         }
-    },[params])
+    },[params.qPage])
 
     if(isNaN(params.qPage)){
         return(
@@ -20,13 +20,12 @@ export default function Quiz(params) {
         )
     }
 
-
     console.log("question data", qs, curPage, qs[curPage]);
     return (
         <>
         <div>
             {params.qPage}
-            <QuizTemplate type={qs[curPage].}/>
+            <QuizTemplate type={qs[curPage].Type}/>
         </div>
         </>
     )

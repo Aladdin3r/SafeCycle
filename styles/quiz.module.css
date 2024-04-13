@@ -1,0 +1,5 @@
+.answerContainer {
+    width: 100%;
+    max-width: 400px; /* Adjust maximum width of answer container */
+    margin: 0 auto; /* Center align the answer container */
+}

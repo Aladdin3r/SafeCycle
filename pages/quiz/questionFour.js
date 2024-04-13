@@ -1,21 +1,27 @@
 import Link from "next/link";
-import { questions } from "./quiz/quizData";
+import { questions } from "./quizData";
+import Answer from "@/components/Answer";
 
 export default function QuestionFour() {
-    const currentQuestion = questions[3]; // Get the first question object
+    const currentQuestion = questions[3];
 
     return (
         <>
             <h1>{currentQuestion.qText}</h1>
             {
                 currentQuestion.choices.map((choice, index) => (
-                    <p key={index}>{choice}</p>
+                    <Answer 
+                        key={index} 
+                        name="questionOne"
+                        text={choice} 
+                    />
                 ))
             }
-            <Link href="/questionThree">
+
+            <Link href="./questionThree">
                 <button>Back</button>
             </Link>
-            <Link href="">
+            <Link href="./endPage">
                 <button>Submit</button>
             </Link>
         </>

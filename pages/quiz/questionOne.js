@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { questions } from "./quiz/quizData";
+import { questions } from "./quizData";
+import Answer from "@/components/Answer";
 
 export default function QuestionOne() {
     const currentQuestion = questions[0];
@@ -9,10 +10,15 @@ export default function QuestionOne() {
             <h1>{currentQuestion.qText}</h1>
             {
                 currentQuestion.choices.map((choice, index) => (
-                    <p key={index}>{choice}</p>
+                    <Answer 
+                        key={index} 
+                        name="questionOne"
+                        text={choice} 
+                    />
                 ))
             }
-            <Link href="/questionTwo">
+
+            <Link href="./questionTwo">
                 <button>Next</button>
             </Link>
         </>

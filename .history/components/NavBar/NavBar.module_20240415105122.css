@@ -1,0 +1,12 @@
+.search {
+    width: max-content;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background-color: var(--grey);
+}
+
+.navigation {
+    display: flex;
+    
+}

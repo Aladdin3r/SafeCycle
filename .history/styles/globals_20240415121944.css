@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600&display=swap');
+
+:root {
+  --grey: #F3F3F3;
+  --light-grey: #B4B4B4;
+  --button-color: #6e7747;
+  --button-color-hover: #4d5527;
+  --correct: #008000;
+  font-family: 'Urbanist', sans-serif;
+}

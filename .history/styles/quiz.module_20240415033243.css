@@ -18,7 +18,13 @@
     margin-top: 5em;
 }
 
+.questionBox{
+    background-color: white;
+}
 
+.questionBox:hover{
+    background-color: grey;
+}
 
 .navigate {
     display: flex;
@@ -56,7 +62,7 @@
 .buttonsecondary:hover {
     width: 150px;
     height: 47px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(227, 227, 227);
     color: black;
     border: 1.5px solid var(--button-color);
     border-radius: 7px;

@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 360px; 
     margin: 0 auto; /* Center align the answer container */
+    background-color: black;
 }
 
 .choice {
@@ -17,8 +18,6 @@
     text-align: center;
     margin-top: 5em;
 }
-
-
 
 .navigate {
     display: flex;
@@ -56,7 +55,7 @@
 .buttonsecondary:hover {
     width: 150px;
     height: 47px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(227, 227, 227);
     color: black;
     border: 1.5px solid var(--button-color);
     border-radius: 7px;

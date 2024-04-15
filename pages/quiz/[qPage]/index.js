@@ -9,7 +9,7 @@ export default function Quiz(params) {
     const [curPage, setCurPage] = useState(0);
 
     useEffect(()=>{
-        if(params.qPage && !isNaN(param.qPage)){
+        if(params.qPage && !isNaN(params.qPage)){
             setCurPage(Number(params.qPage));
         }
     },[params.qPage])
@@ -26,7 +26,7 @@ export default function Quiz(params) {
         <div>
             {params.qPage}
             <QuizTemplate 
-                type={qs[curPage].Type}
+                type={qs[curPage].type}
                 qText={qs[curPage].qText}
                 choices={qs[curPage].choices}
             />

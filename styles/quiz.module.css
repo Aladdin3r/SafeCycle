@@ -1,6 +1,6 @@
 .answerContainer {
     width: 100%;
-    max-width: 760px; /* Adjust maximum width of answer container */
+    max-width: 760px; 
     margin: 0 auto; /* Center align the answer container */
 }
 
@@ -12,17 +12,6 @@
     border: 1px solid transparent;
     border-radius: 5px;
 }
-
-.choice.selected {
-    border-color: black;
-}
-.choice.correct {
-    border-color: green; 
-}
-.choice.wrong {
-    border-color: red; 
-}
-
 
 .question {
     text-align: center;
@@ -53,4 +42,16 @@
     border: 1.5px solid var(--button-color);
     border-radius: 7px;
 }
-    
+
+.feedback {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.end {
+    margin-top: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

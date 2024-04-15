@@ -1,0 +1,36 @@
+.search {
+    width: max-content;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background-color: var(--grey);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    list-style-type: none;
+    background-color: white;
+    color: var(--button-color);
+}
+
+.navigation li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

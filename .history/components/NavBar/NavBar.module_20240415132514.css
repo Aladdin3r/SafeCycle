@@ -1,0 +1,74 @@
+.search {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 15px;
+    border-radius: 28px;
+    background-color: var(--white);
+    border-radius: 18px;
+    
+}
+
+.searchInput {
+    background-color: var(--white);
+    border: none;
+    font-size: 16px;
+    color: var(--light-grey);
+    font-family: 'Urbanist';
+    flex-grow: 1;
+}
+
+.searchIcon {
+    margin-right: 10px; 
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    background-color: white;
+    padding: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 30px; 
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.navigation {
+    width: 100%; 
+    max-width: 400px; 
+    margin-bottom: 20px;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    list-style-type: none;
+    background-color: white;
+    color: var(--button-color);
+    margin-top: 30px;
+}
+
+.navigation li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.quizlink {
+    list-style: none;
+    text-decoration: none;
+    color: var(--button-color);
+}

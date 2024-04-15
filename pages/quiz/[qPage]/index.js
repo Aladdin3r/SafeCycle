@@ -25,7 +25,11 @@ export default function Quiz(params) {
         <>
         <div>
             {params.qPage}
-            <QuizTemplate type={qs[curPage].Type}/>
+            <QuizTemplate 
+                type={qs[curPage].Type}
+                qText={qs[curPage].qText}
+                choices={qs[curPage].choices}
+            />
         </div>
         </>
     )

@@ -8,7 +8,7 @@ export default function QuestionOne() {
 
     return (
         <>
-            <h1>{currentQuestion.qText}</h1>
+            <h3 className={styles.question}>{currentQuestion.qText}</h3>
             <div className={styles.answerContainer}>
                 {
                     currentQuestion.choices.map((choice, index) => (
@@ -20,9 +20,11 @@ export default function QuestionOne() {
                     ))
                 }
             </div>
-            <Link href="./questionTwo">
-                <button>Next</button>
-            </Link>
+            <div className={styles.navigate}>
+                <Link href="./questionTwo">
+                    <button className={styles.button}>Next</button>
+                </Link>
+            </div>
         </>
     );
 }

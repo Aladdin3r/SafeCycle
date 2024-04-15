@@ -1,5 +1,56 @@
 .answerContainer {
     width: 100%;
-    max-width: 400px; /* Adjust maximum width of answer container */
+    max-width: 760px; /* Adjust maximum width of answer container */
     margin: 0 auto; /* Center align the answer container */
 }
+
+.choice {
+    text-align: center;
+    margin-top: 1em;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.choice.selected {
+    border-color: black;
+}
+.choice.correct {
+    border-color: green; 
+}
+.choice.wrong {
+    border-color: red; 
+}
+
+
+.question {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.navigate {
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+    gap: 1em;
+}
+
+.button {
+    width: 372px;
+    height: 47px;
+    background-color: var(--button-color);
+    color: white;
+    border: 1.5px solid var(--button-color);
+    border-radius: 7px;
+}
+
+.buttonsecondary {
+    width: 372px;
+    height: 47px;
+    background-color: white;
+    color: black;
+    border: 1.5px solid var(--button-color);
+    border-radius: 7px;
+}
+    

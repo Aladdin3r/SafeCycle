@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Link from 'next/link'
-import Quiz from "./quiz/[qPage]";
 import NavBar from "@/components/NavBar";
 
 
@@ -12,16 +11,14 @@ export default function Home() {
         <title>SafeCycle</title>
         <meta name="description" content="Home Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon3.png" />
       </Head>
       <main className={`${styles.main}`}>
         <NavBar />
         <Link href="/quiz/questionOne">
-
-          <button>Take Quiz</button>
-      
+          <button  className={styles.button}>Take Safety Quiz</button>
         </Link>
-        <Quiz/>
+        
       </main>
     </>
   );

@@ -4,6 +4,7 @@ import Answer from "@/components/Answer";
 import { useState } from "react";
 import styles from "@/styles/quiz.module.css";
 
+
 export default function QuestionOne() {
     const currentQuestion = questions[0];
     const [answerStatus, setAnswerStatus] = useState(null); // State to track answer status
@@ -22,6 +23,7 @@ export default function QuestionOne() {
                     />
                 ))}
             </div>
+            
             {answerStatus !== null && (
                 <div className={styles.feedback}>
                     {answerStatus ? "Correct!" : "Wrong. Try again!"}

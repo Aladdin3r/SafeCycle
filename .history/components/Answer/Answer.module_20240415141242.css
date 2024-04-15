@@ -9,7 +9,7 @@
 }
 
 .answerBox:hover {
-    background-color: var(--darker-grey);
+    background-color: #e1e0e0;
     cursor: pointer;
 }
 
@@ -24,5 +24,5 @@
 
 .label {
     font-size: 16px;
-    color: #333;
+    color: var(--light-grey);
 }

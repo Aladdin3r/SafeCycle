@@ -9,7 +9,7 @@
 }
 
 .answerBox:hover {
-    background-color: var(--darker-grey);
+    background-color: rgb(196, 196, 196);
     cursor: pointer;
 }
 

@@ -42,7 +42,6 @@
     color: white;
     border: 1.5px solid var(--button-color-hover);
     border-radius: 7px;
-    cursor: pointer;
 }
 
 .buttonsecondary {

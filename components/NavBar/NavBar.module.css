@@ -9,13 +9,12 @@
     padding: 10px;
     background-color: var(--white);
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
-    padding-top: 30px; 
 }
 
 .navigation {
     width: 100%; 
     max-width: 400px; 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .navigation ul{

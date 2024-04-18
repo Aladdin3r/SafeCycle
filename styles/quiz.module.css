@@ -1,7 +1,7 @@
 .answerContainer {
     width: 100%;
     max-width: 360px; 
-    margin: 0 auto; /* Center align the answer container */
+    margin: 0 auto;
 }
 
 .choice {
@@ -16,8 +16,6 @@
     text-align: center;
     margin-top: 5em;
 }
-
-
 
 .navigate {
     display: flex;

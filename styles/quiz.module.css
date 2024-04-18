@@ -76,18 +76,13 @@
 
 /* Quiz Home */
 
-.quizHomeContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .quizHomeTitle {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Stack items vertically */
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .quizHomeTitle h2 {
@@ -115,3 +110,12 @@
     border: 1.5px solid var(--button-color);
     border-radius: 7px;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 20vh;
+  }

@@ -6,37 +6,36 @@ import Link from 'next/link'
 export default function NavBar() {
     return( 
         <>
-        <form>
-            <div className={styles.search}>
-                <Image className={styles.searchIcon} src="./icons/search.svg" width={20} height={20} />
-                <input className={styles.searchInput} type="search" placeholder='Search place'></input>
-            </div>
-        </form> 
                    
         <div className={`${styles.container} ${styles.navigation}`}>
            
             <div className={styles.navigation}>
                 
                 <ul>
-                    
-                    <li className={styles.list}>
-                        <Image src="./icons/community.svg" width={20} height={20} />
-                        <a>Community</a>
-                    </li>
-                    <li className={styles.list}>
-                        <Image src="./icons/hazard.svg" width={20} height={20} />
-                        <a>Hazards</a>
-                    </li>
-                    <Link href="/quiz/questionOne" className={styles.quizlink}>
+                    <Link href="/pages/community" className={styles.communitylink}>
                         <li className={styles.list}>
-                            <Image src="./icons/quiz.svg" width={20} height={20} />
-                            <a>Quiz</a>
+                            <Image src="./icons/community.svg" width={20} height={20} />
+                            Community
                         </li>
                     </Link>
-                    <li className={styles.list}>
-                        <Image src="./icons/profile.svg" width={20} height={20} />
-                        <a>Profile</a>
-                    </li>
+                    <Link href="/pages/hazards" className={styles.hazardslink}>
+                        <li className={styles.list}>
+                            <Image src="./icons/hazard.svg" width={20} height={20} />
+                            Hazards
+                        </li>
+                    </Link>
+                    <Link href="/quiz/quizHome" className={styles.quizlink}>
+                        <li className={styles.list}>
+                            <Image src="./icons/quiz.svg" width={20} height={20} />
+                            Quiz
+                        </li>
+                    </Link>
+                    <Link href="/pages/profile" className={styles.profilelink}>
+                        <li className={styles.list}>
+                            <Image src="./icons/hazard.svg" width={20} height={20} />
+                            Profile
+                        </li>
+                    </Link>
                 </ul>
             </div>
         </div>

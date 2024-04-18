@@ -41,3 +41,18 @@
     text-decoration: none;
     color: var(--button-color);
 }
+.profilelink {
+    list-style: none;
+    text-decoration: none;
+    color: var(--button-color);
+}
+.hazardslink {
+    list-style: none;
+    text-decoration: none;
+    color: var(--button-color);
+}
+.communitylink {
+    list-style: none;
+    text-decoration: none;
+    color: var(--button-color);
+}

@@ -14,8 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon3.png" />
       </Head>
       <main className={`${styles.main}`}>
-        <SearchBar />
-        <NavBar />
+        <div className={styles.container}>
+          <SearchBar />
+          <NavBar />
+        </div>
       </main>
     </>
   );

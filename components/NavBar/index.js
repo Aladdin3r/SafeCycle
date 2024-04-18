@@ -27,7 +27,7 @@ export default function NavBar() {
                             Quiz
                         </li>
                     </Link>
-                    <Link href="/profile" className={styles.profilelink}>
+                    <Link href="/pages/profile" className={styles.profilelink}>
                         <li className={styles.list}>
                             <Image src="./icons/hazard.svg" width={20} height={20} />
                             Profile

@@ -5,20 +5,17 @@ import Link from 'next/link'
 
 export default function NavBar() {
     return( 
-        <>
-                   
-        <div className={`${styles.container} ${styles.navigation}`}>
-           
+        <>  
+        <div className={`${styles.container}`}>
             <div className={styles.navigation}>
-                
                 <ul>
-                    <Link href="/pages/community" className={styles.communitylink}>
+                    <Link href="/community" className={styles.communitylink}>
                         <li className={styles.list}>
                             <Image src="./icons/community.svg" width={20} height={20} />
                             Community
                         </li>
                     </Link>
-                    <Link href="/pages/hazards" className={styles.hazardslink}>
+                    <Link href="/hazards" className={styles.hazardslink}>
                         <li className={styles.list}>
                             <Image src="./icons/hazard.svg" width={20} height={20} />
                             Hazards
@@ -30,7 +27,7 @@ export default function NavBar() {
                             Quiz
                         </li>
                     </Link>
-                    <Link href="/pages/profile" className={styles.profilelink}>
+                    <Link href="/profile" className={styles.profilelink}>
                         <li className={styles.list}>
                             <Image src="./icons/hazard.svg" width={20} height={20} />
                             Profile

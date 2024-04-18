@@ -4,7 +4,7 @@
     align-items: center;
     position: fixed;
     bottom: 0;
-    width: auto;
+    width: 100%;
     background-color: white;
     padding: 10px;
     background-color: var(--white);

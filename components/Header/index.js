@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function NavBar() {
+export default function Header() {
     
     const title= "Title";
 

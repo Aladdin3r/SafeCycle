@@ -15,7 +15,7 @@ export default function QuizHome() {
             <link rel="icon" href="/favicon3.png" />
         </Head>
         <main className={`${styles.main}`}>
-            <Header />
+            <Header title="Quiz"/>
             <div>
                 <div className={styles.quizHomeTitle}>
                     <h3>Ready to see if you’re a good pedestrian? <br/> Take the Quiz!</h3>

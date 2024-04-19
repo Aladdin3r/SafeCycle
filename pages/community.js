@@ -14,7 +14,7 @@ export default function Community() {
             </Head>
             <main className={`${styles.main}`}>
                 <div className={styles.navcontainer}>
-                    <Header/>
+                    <Header title="Community"/>
                     <NavBar/>
                 </div>
             </main>

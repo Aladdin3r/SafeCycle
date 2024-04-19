@@ -9,27 +9,27 @@ export default function NavBar() {
         <div className={`${styles.container}`}>
             <div className={styles.navigation}>
                 <ul>
-                    <Link href="/community" className={styles.communitylink}>
+                    <Link href="/community" className={styles.iconlink}>
                         <li className={styles.list}>
-                            <Image src="./icons/community.svg" width={20} height={20} />
+                            <Image src="./icons/community.svg" width={25} height={25} />
                             Community
                         </li>
                     </Link>
-                    <Link href="/hazards" className={styles.hazardslink}>
+                    <Link href="/hazards" className={styles.iconlink}>
                         <li className={styles.list}>
-                            <Image src="./icons/hazard.svg" width={20} height={20} />
+                            <Image src="./icons/hazard.svg" width={25} height={25} />
                             Hazards
                         </li>
                     </Link>
-                    <Link href="/quiz/quizHome" className={styles.quizlink}>
+                    <Link href="/quiz/quizHome" className={styles.iconlink}>
                         <li className={styles.list}>
-                            <Image src="./icons/quiz.svg" width={20} height={20} />
+                            <Image src="./icons/quiz.svg" width={25} height={25} />
                             Quiz
                         </li>
                     </Link>
-                    <Link href="/pages/profile" className={styles.profilelink}>
+                    <Link href="/pages/profile" className={styles.iconlink}>
                         <li className={styles.list}>
-                            <Image src="./icons/hazard.svg" width={20} height={20} />
+                            <Image src="./icons/profile.svg" width={25} height={25} />
                             Profile
                         </li>
                     </Link>

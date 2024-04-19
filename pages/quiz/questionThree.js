@@ -3,6 +3,7 @@ import { questions } from "./quizData";
 import Answer from "@/components/Answer";
 import { useState } from "react";
 import styles from "@/styles/quiz.module.css";
+import Image from "next/image";
 
 export default function QuestionThree() {
     const currentQuestion = questions[2];
@@ -11,6 +12,7 @@ export default function QuestionThree() {
     return (
         <>
             <h3 className={styles.question}>{currentQuestion.qText}</h3>
+            <Image className={styles.quizImage} src="/images/quiz1.jpeg" alt="image of family walking through crosswalk" width={318} height={212}/>
             <div className={`${styles.answerContainer} quiz`}>
                 {currentQuestion.choices.map((choice, index) => (
                     <Answer
@@ -24,13 +26,10 @@ export default function QuestionThree() {
             </div>
             {answerStatus !== null && (
                 <div className={styles.feedback}>
-                    {answerStatus ? "Correct!" : "Wrong. Try again!"}
+                    {answerStatus ? "Correct!" : "Incorrect!"}
                 </div>
             )}
             <div className={styles.navigate}>
-                <Link href="./questionTwo">
-                    <button className={styles.buttonsecondary}>Back</button>
-                </Link>
                 <Link href="./questionFour">
                     <button className={styles.button} disabled={answerStatus === null}>Next</button>
                 </Link>

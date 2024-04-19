@@ -1,6 +1,13 @@
+.quizOneContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .answerContainer {
     width: 100%;
-    max-width: 360px; 
+    max-width: 372px; 
     margin: 0 auto;
 }
 
@@ -25,7 +32,7 @@
 }
 
 .button {
-    width: 150px;
+    width: 372px;
     height: 47px;
     background-color: var(--button-color);
     color: white;
@@ -74,6 +81,13 @@
     align-items: center;
 }
 
+.quizImage {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 212px; 
+}
+
 /* Quiz Home */
 
 
@@ -81,7 +95,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     margin-top: 150px;
 }
 

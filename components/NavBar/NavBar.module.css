@@ -6,25 +6,26 @@
     bottom: 0;
     width: 100%;
     background-color: white;
-    padding: 10px;
     background-color: var(--white);
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .navigation {
-    width: 100%; 
-    max-width: 400px; 
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    height: 116px;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .navigation ul{
     display: flex;
     flex-direction: row;
-    gap: 2.5em;
     list-style-type: none;
     background-color: white;
     color: var(--button-color);
-    margin-top: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation li {
@@ -35,23 +36,16 @@
     font-size: 14px;
 }
 
-.quizlink {
+.iconlink {
     list-style: none;
     text-decoration: none;
     color: var(--button-color);
-}
-.profilelink {
-    list-style: none;
-    text-decoration: none;
-    color: var(--button-color);
-}
-.hazardslink {
-    list-style: none;
-    text-decoration: none;
-    color: var(--button-color);
-}
-.communitylink {
-    list-style: none;
-    text-decoration: none;
-    color: var(--button-color);
+    display: flex;
+    width: 72px;
+    height: 52px;
+    padding: 8px 12px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
 }

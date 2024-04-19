@@ -5,30 +5,29 @@ import { useState } from "react";
 import styles from "@/styles/quiz.module.css";
 import Image from "next/image";
 
-
 export default function QuestionOne() {
     const currentQuestion = questions[0];
-    const [answerStatus, setAnswerStatus] = useState(null); // State to track answer status
+    const [answerStatus, setAnswerStatus] = useState(null);
 
     return (
         <>
-        <div className={styles.quizOneContainer}>
-            <h3 className={styles.question}>{currentQuestion.qText}</h3>
-            <Image className={styles.quizImage} src="/images/quiz1.jpeg" alt="image of family walking through crosswalk" width={318} height={212}/>
-            <div className={`${styles.answerContainer} quiz`}>
-                {currentQuestion.choices.map((choice, index) => (
-                    <Answer
-                        key={index}
-                        text={choice}
-                        correctAnswer={currentQuestion.correctAnswer}
-                        onNext={(isCorrect) => setAnswerStatus(isCorrect)}
-                        lesson={currentQuestion.lesson}
-                    />
-                ))}
+            <div className={styles.quizOneContainer}>
+                <h3 className={styles.question}>{currentQuestion.qText}</h3>
+                <Image className={styles.quizImage} src="/images/quiz1.jpeg" alt="image of family walking through crosswalk" width={318} height={212} />
+                <div className={`${styles.answerContainer} quiz`}>
+                    {currentQuestion.choices.map((choice, index) => (
+                        <Answer
+                            key={index}
+                            option={String.fromCharCode(65 + index)}
+                            text={choice}
+                            correctAnswer={currentQuestion.correctAnswer}
+                            onNext={(isCorrect) => setAnswerStatus(isCorrect)}
+                            lesson={currentQuestion.lesson}
+                        />
+                    ))}
+                </div>
             </div>
-        </div>
-            
-            
+
             {answerStatus !== null && (
                 <div className={styles.feedback}>
                     {answerStatus ? "Correct!" : "Incorrect!"}

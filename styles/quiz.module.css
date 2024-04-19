@@ -41,7 +41,7 @@
 }
 
 .button:hover {
-    width: 150px;
+    width: 372px;
     height: 47px;
     background-color: var(--button-color-hover);
     color: white;
@@ -51,7 +51,7 @@
 }
 
 .buttonsecondary {
-    width: 150px;
+    width: 372px;
     height: 47px;
     background-color: white;
     color: black;

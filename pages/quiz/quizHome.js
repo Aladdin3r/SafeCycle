@@ -13,21 +13,21 @@ export default function QuizHome() {
             <meta name="description" content="Home Page" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon3.png" />
-        </Head>
-        <main className={`${styles.main}`}>
-            <Header title="Quiz"/>
-            <div>
-                <div className={styles.quizHomeTitle}>
-                    <h3>Ready to see if you’re a good pedestrian? <br/> Take the Quiz!</h3>
+            </Head>
+            <main className={`${styles.main}`}>
+                <Header title="Quiz"/>
+                <div>
+                    <div className={styles.quizHomeTitle}>
+                        <h3>Ready to see if you’re a good pedestrian? <br/> Take the Quiz!</h3>
+                    </div>
+                    <div className={styles.startButtonContainer}>
+                        <Link href="./questionOne">
+                            <button className={styles.startButton}>Take Quiz</button>
+                        </Link>
+                    </div>
                 </div>
-                <div className={styles.startButtonContainer}>
-                    <Link href="./questionOne">
-                        <button className={styles.startButton}>Take Quiz</button>
-                    </Link>
-                </div>
-            </div>
-            <NavBar/>
-        </main>
+                <NavBar/>
+            </main>
         </>
     )
 }

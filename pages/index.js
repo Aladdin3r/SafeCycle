@@ -15,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
+        <div>
         <NavBar />
         <Link href="/quiz/questionOne">
 
@@ -22,6 +23,8 @@ export default function Home() {
       
         </Link>
         <Quiz/>
+        </div>
+
       </main>
     </>
   );

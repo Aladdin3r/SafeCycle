@@ -2,6 +2,7 @@ import Link from "next/link";
 import { questions } from "./quizData";
 import Answer from "@/components/Answer";
 import styles from "@/styles/quiz.module.css";
+import Image from "@/components/Image";
 
 export default function QuestionOne() {
     const currentQuestion = questions[0];
@@ -9,6 +10,7 @@ export default function QuestionOne() {
     return (
         <>
             <h1>{currentQuestion.qText}</h1>
+            <Image />
             <div className={styles.answerContainer}>
                 {
                     currentQuestion.choices.map((choice, index) => (

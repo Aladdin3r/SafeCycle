@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <div className={styles.container}>
-            <div className={styles.welcomeTitle}>
+            <div className={styles.loginTitle}>
                 <h1>Login</h1>
             </div>
             <div className={styles.emailUsername}>

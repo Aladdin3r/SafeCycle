@@ -23,10 +23,16 @@
 
   /* Login Page */
 
+  .loginTitle {
+    margin-bottom: 35px;
+  }
+
   .orWith {
     display: flex;
     align-items: center;
     position: relative;
+    margin-top: 35px;
+    margin-bottom: 35px;
   }
   
   .orWith span {
@@ -39,7 +45,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    width: 137px;
+    width: 119px;
     height: 1px;
     background-color: var(--line-color-grey); 
   }
@@ -53,7 +59,3 @@
   }
   
   
-.loginButton {
-  width: 100%;
-  max-width: 372px;
-}

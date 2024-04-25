@@ -1,9 +1,9 @@
-import Link from "next/link";
 import { questions } from "./quizData";
 import Answer from "@/components/Answer";
 import { useState } from "react";
 import styles from "@/styles/quiz.module.css";
 import Image from "next/image";
+import Button from "@/components/Button";
 
 export default function QuestionOne() {
     const currentQuestion = questions[0];
@@ -34,9 +34,11 @@ export default function QuestionOne() {
                 </div>
             )}
             <div className={styles.navigate}>
-                <Link href="./questionTwo">
-                    <button className={styles.button} disabled={answerStatus === null}>Submit answer</button>
-                </Link>
+                <Button 
+                    href="./questionTwo"
+                    label="Submit Answer"
+                    disabled={answerStatus === null}
+                />
             </div>
         </>
     );

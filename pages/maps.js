@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
 import SearchBar from "@/components/SearchBar";
-
+import MapGoogle from "@/components/MapGoogle"
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
         <div className={styles.container}>
           <SearchBar />
           <NavBar />
+          <MapGoogle />
         </div>
       </main>
     </>

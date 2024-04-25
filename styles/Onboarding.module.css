@@ -1,0 +1,59 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 20vh;
+}
+  
+.container {
+  width: 430px;
+  height: 932px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+  /* Welcome Page */
+
+
+
+  /* Login Page */
+
+  .orWith {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .orWith span {
+    font-size: 16px;
+    padding: 0 22px;
+  }
+  
+  .orWith::before,
+  .orWith::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 137px;
+    height: 1px;
+    background-color: var(--line-color-grey); 
+  }
+  
+  .orWith::before {
+    right: 100%;
+  }
+  
+  .orWith::after {
+    left: 100%;
+  }
+  
+  
+.loginButton {
+  width: 100%;
+  max-width: 372px;
+}

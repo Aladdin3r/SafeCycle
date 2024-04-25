@@ -5,7 +5,7 @@ const Button = ({ href, label, disabled }) => {
   return (
     <div className={styles.navigate}>
       <Link href={href}>
-        <button className={styles.button} disabled={disabled}>
+        <button className={styles.button}>
           {label}
         </button>
       </Link>

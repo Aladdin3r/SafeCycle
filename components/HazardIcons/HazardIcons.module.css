@@ -1,0 +1,25 @@
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconButton {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+  
+.iconTitle {
+  margin-top: 8px;
+  font-size: 14px; 
+  color: var(--text-color-dark); 
+}

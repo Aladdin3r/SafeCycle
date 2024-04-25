@@ -18,6 +18,7 @@ export default function QuestionThree() {
                     {currentQuestion.choices.map((choice, index) => (
                         <Answer
                             key={index}
+                            tabindex={index + 1}
                             option={String.fromCharCode(65 + index)}
                             text={choice}
                             correctAnswer={currentQuestion.correctAnswer}

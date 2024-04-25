@@ -10,8 +10,31 @@
 .navcontainer {
     width: 430px;
     height: 932px;
+    padding-top:50px;
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
     align-items: center;
-    position: fixed;
   }
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+  
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: co;
+  width: 181px;
+  height: 181px;
+  background-color: var(--grey);
+  border-radius: 15px;
+}
+
+.nearbyActivity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

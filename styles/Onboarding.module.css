@@ -29,19 +29,28 @@
 
   .orWith {
     display: flex;
+    flex-direction: column;
     align-items: center;
     position: relative;
     margin-top: 35px;
     margin-bottom: 35px;
   }
+  .logins {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    gap: 11px;
+  }
   
   .orWith span {
     font-size: 16px;
     padding: 0 22px;
+    position: relative;
+    display: inline-block;
   }
   
-  .orWith::before,
-  .orWith::after {
+  .orWith span::before,
+  .orWith span::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -50,12 +59,13 @@
     background-color: var(--line-color-grey); 
   }
   
-  .orWith::before {
+  .orWith span::before {
     right: 100%;
   }
   
-  .orWith::after {
+  .orWith span::after {
     left: 100%;
   }
+
   
   

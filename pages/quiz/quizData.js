@@ -41,3 +41,5 @@ export const questions = [
          lesson: "When walking on a road without a sidewalk, it's crucial to prioritize safety and visibility. Pedestrians should walk facing oncoming traffic to see and be seen by vehicles. Walking against traffic allows pedestrians to react to approaching vehicles and increases their visibility to drivers. This practice reduces the risk of accidents and ensures that both pedestrians and drivers can navigate safely on roads without sidewalks.",
      }
 ];
+
+export default questions;

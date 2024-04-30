@@ -11,6 +11,19 @@ const containerStyle = {
     zIndex: '0'
   };
 
+  const loader = new Loader({
+    apiKey: "AIzaSyDoRHMcwR43OLGNWZ2lbX74qmywO_r4uQs",
+    version: "weekly",
+  });
+  
+  loader.load().then(async () => {
+    const { Map } = await google.maps.importLibrary("maps");
+
+    // Map = new Map(document.getElementById("map"), {
+    //   center: { lat: 49.2498, lng: -122.9991 },
+    //   zoom: 8,
+    // });
+  });
 
   const center = {
     lat: 49.2498,

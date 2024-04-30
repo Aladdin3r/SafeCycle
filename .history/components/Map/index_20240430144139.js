@@ -11,7 +11,15 @@ const containerStyle = {
     zIndex: '0'
   };
 
-
+  const loader = new Loader({
+    apiKey: "YOUR_API_KEY",
+    version: "weekly",
+    ...additionalOptions,
+  });
+  
+  loader.load().then(async () => {
+    const { Map } = await google.maps.importLibrary("maps");
+  };
   const center = {
     lat: 49.2498,
     lng: -122.9991

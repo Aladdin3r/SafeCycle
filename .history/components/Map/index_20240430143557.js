@@ -40,8 +40,7 @@ const containerStyle = {
           zoom={17}
           options={{
             draggable: true,
-            zoomControl: true,
-            gestureHandling: 'greedy',
+            zoomControl: true
           }}
 
         > 

@@ -2,7 +2,7 @@
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 const containerStyle = {
-    width: '100vw',
+    width: '22.396vw',
     height: '100vh',
     marginTop: '10vh',
     touchAction: 'auto',
@@ -40,10 +40,8 @@ const containerStyle = {
           zoom={17}
           options={{
             draggable: true,
-            zoomControl: true,
-            gestureHandling: 'greedy',
+            zoomControl: true
           }}
-
         > 
           
         </GoogleMap>

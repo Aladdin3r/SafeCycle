@@ -41,7 +41,7 @@ const containerStyle = {
           options={{
             draggable: true,
             zoomControl: true,
-            gestureHandling: 'greedy',
+            gestureHandling: 'g'
           }}
 
         > 

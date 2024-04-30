@@ -3,11 +3,10 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 const containerStyle = {
     width: '100vw',
-    height: '100vh',
+    height: '100vw',
     marginTop: '10vh',
     touchAction: 'auto',
-    position: 'fixed',
-    zIndex: '0'
+    position: 'fixed'
   };
   
   const center = {

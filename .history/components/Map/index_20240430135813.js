@@ -6,8 +6,8 @@ const containerStyle = {
     height: '100vh',
     marginTop: '10vh',
     touchAction: 'auto',
-    position: 'fixed',
-    zIndex: '0'
+    position: 'fixed'
+    z-
   };
   
   const center = {

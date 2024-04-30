@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import SearchBar from "@/components/SearchBar";
 import MapPage from "@/components/Map";
 
+
 export default function Home() {
   return (
     <>

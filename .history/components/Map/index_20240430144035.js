@@ -10,8 +10,7 @@ const containerStyle = {
     position: 'fixed',
     zIndex: '0'
   };
-
-
+  
   const center = {
     lat: 49.2498,
     lng: -122.9991

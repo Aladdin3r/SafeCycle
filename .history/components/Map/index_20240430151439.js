@@ -11,6 +11,12 @@ const containerStyle = {
     zIndex: '0'
   };
 
+  const loader = new Loader({
+    apiKey: "AIzaSyDoRHMcwR43OLGNWZ2lbX74qmywO_r4uQs",
+    version: "weekly",
+  });
+  
+
 
   const center = {
     lat: 49.2498,

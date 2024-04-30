@@ -1,0 +1,71 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+  
+.container {
+  width: 430px;
+  height: 932px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+  /* Welcome Page */
+
+
+
+  /* Login Page */
+
+  .loginTitle {
+    margin-bottom: 35px;
+  }
+
+  .orWith {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .logins {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    gap: 11px;
+  }
+  
+  .orWith span {
+    font-size: 16px;
+    padding: 0 22px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .orWith span::before,
+  .orWith span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 119px;
+    height: 1px;
+    background-color: var(--line-color-grey); 
+  }
+  
+  .orWith span::before {
+    right: 100%;
+  }
+  
+  .orWith span::after {
+    left: 100%;
+  }
+
+  
+  

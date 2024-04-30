@@ -7,7 +7,7 @@ const containerStyle = {
     marginTop: '10vh',
     touchAction: 'auto',
     position: 'fixed',
-    zIndex: '0'
+    zindex: '-1;
   };
   
   const center = {

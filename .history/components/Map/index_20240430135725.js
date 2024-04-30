@@ -2,12 +2,11 @@
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 const containerStyle = {
-    width: '100vw',
+    width: '100%',
     height: '100vh',
     marginTop: '10vh',
     touchAction: 'auto',
-    position: 'fixed',
-    zIndex: '0'
+    position: 'fixed'
   };
   
   const center = {

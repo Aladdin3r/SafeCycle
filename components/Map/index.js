@@ -1,6 +1,6 @@
 'use client'
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
-import { Loader } from "@googlemaps/js-api-loader"
+
 
 const containerStyle = {
     width: '100vw',
@@ -44,11 +44,11 @@ const containerStyle = {
             draggable: true,
             zoomControl: true,
             gestureHandling: 'greedy',
+            mapIds: ['da4f6b07e44c857f'],
+            ...mapOptions
           }}
 
-        > 
-          
-        </GoogleMap>
+        /> 
       </LoadScript>
     );   
   };

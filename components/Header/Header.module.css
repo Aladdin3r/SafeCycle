@@ -11,8 +11,39 @@
     padding-top: 50px; 
 }
 
+.contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .title h1 {
     font-family: 'Urbanist', sans-serif;
     font-size: 26px;
     color: var(--grey);
+}
+
+.back {
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+.backButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.backIcon {
+    width: 24px; 
+    height: 24px; 
 }

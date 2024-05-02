@@ -1,4 +1,4 @@
-import { questions } from "./quizData";
+import { questions } from "../../data/quizData";
 import Answer from "@/components/Answer";
 import { useState } from "react";
 import styles from "@/styles/quiz.module.css";
@@ -18,6 +18,7 @@ export default function QuestionFour() {
                     {currentQuestion.choices.map((choice, index) => (
                         <Answer
                             key={index}
+                            tabindex={index + 1}
                             option={String.fromCharCode(65 + index)}
                             text={choice}
                             correctAnswer={currentQuestion.correctAnswer}

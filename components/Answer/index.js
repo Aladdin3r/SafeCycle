@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Answer.module.css";
 
-export default function Answer({ option, text, correctAnswer, onNext, lesson }) {
+export default function Answer({ option, text, correctAnswer, onNext, lesson, tabindex }) {
    
     const sessionStorage = typeof window !== 'undefined' ? window.sessionStorage : null;
 
@@ -19,7 +19,13 @@ export default function Answer({ option, text, correctAnswer, onNext, lesson }) 
 
     return (
         <div>
-            <div className={`${styles.answerBox} ${selected ? styles.selected : ''} ${selected && text === correctAnswer ? styles.correct : ''}`} onClick={handleAnswerClick}>
+
+            <div className={`${styles.answerBox} ${selected ? styles.selected : ''} ${selected && text === correctAnswer ? styles.correct : ''}`} onClick={handleAnswerClick}  tabIndex={tabindex}  
+            onKeyDown={(e) => {
+                if (e.keyCode == 13) {
+                        handleAnswerClick(); 
+                    }
+            }}>
                 <input type="radio" name="answer" className={styles.radioButton} checked={selected} onChange={() => {}} />
                 <label className={styles.label}>{option}. {text}</label>
             </div>

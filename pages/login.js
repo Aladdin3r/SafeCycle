@@ -28,10 +28,31 @@ export default function Home() {
                 <Button 
                     href="./maps"
                     label="Log in"
+
                 />
             </div>
             <div className={styles.orWith}>
                 <span>Or login with</span>
+                <div className={styles.logins}>
+                  <Button
+                    href="./maps"
+                    src="/icons/google.webp"
+                    label="Login with Google"
+                    style="secondary"
+                  />
+                  <Button
+                    href="./maps"
+                    src="/icons/apple.png"
+                    label="Login with Apple"
+                    style="secondary"
+                  />
+                  <Button
+                    href="./maps"
+                    src="/icons/facebook.webp"
+                    label="Login with Facebook"
+                    style="secondary"
+                  />
+              </div>
             </div>
         </div>
       </main>

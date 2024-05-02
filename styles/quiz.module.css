@@ -64,6 +64,21 @@
     margin-top: 150px;
 }
 
+.quizHomeDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.quizHomeGraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
 .quizHomeTitle h2 {
     font-size: 24px;
     font-weight: 400;

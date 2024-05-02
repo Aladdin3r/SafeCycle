@@ -37,3 +37,12 @@
     border: 1.5px solid var(--button-color);
     border-radius: 7px;
 }
+
+.icon {
+    width: 23px;
+    height: 22px;
+    object-fit: contain;
+    margin-right: 12px;
+    position: absolute;
+    left:82px;
+}

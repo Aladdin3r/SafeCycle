@@ -2,29 +2,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
-<<<<<<< HEAD
-import SearchBar from "@/components/SearchBar";
-import MapGoogle from "@/components/MapGoogle"
-
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>SafeCycle</title>
-        <meta name="description" content="Home Page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon3.png" />
-      </Head>
-      <main className={`${styles.main}`}>
-        <div className={styles.container}>
-          <SearchBar />
-          <NavBar />
-          <MapGoogle />
-        </div>
-      </main>
-    </>
-  );
-=======
 import SearchBarButton from "@/components/SearchBarButton";
 import MapPage from "@/components/Map";
 import PullUpPage from "@/components/PullUpPage";
@@ -54,5 +31,4 @@ export default function Home() {
             </main>
         </>
     );
->>>>>>> main
 }

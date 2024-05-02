@@ -1,54 +1,50 @@
-
 .pullcontainer {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 60%;
-    background: rgba(100, 100, 0.1);
-    visibility: hidden;
+    bottom: -100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto; 
+    max-height: 60%; 
+    transition: bottom 0.3s ease; 
+    z-index: 1000;
 }
 
 .pullcontainer.show {
-    visibility: visible;
+    bottom: 0; 
 }
 
 .content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative; 
     width: 100%;
-    max-width: 480px;
-    height: 90%;
-    max-height: 100%;
+    height: 100%;
     background: #fff;
-    transform: translateX(-50%);
     box-shadow: 0 10px 15px rgba(46, 51, 71, 0.4);
+    border-radius: 35px 35px 0px 0px; 
 }
 
 .header {
     display: flex;
     justify-content: center;
+    padding: 15px; 
 }
 
- .header .drag {
+.header .drag {
     cursor: grab;
     user-select: none;
-    padding: 15px;
-    margin-top: -15px;
- }
+}
 
- .header .drag span {
+.header .drag span {
     height: 5px;
     width: 50px;
     display: block;
     background: #c2cde3;
     border-radius: 20px;
- }
+}
 
- .body{
+.body {
     width: 100%;
-    height: 100%;
+    max-height: calc(100% - 45px); 
     overflow-y: auto;
-    padding: 15px 0 40px 0;
- }
+    padding: 15px;
+}

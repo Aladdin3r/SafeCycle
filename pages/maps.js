@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
 import SearchBar from "@/components/SearchBar";
+import SearchBarButton from "@/components/SearchBarButton";
 import MapPage from "@/components/Map";
 import PullUpPage from "@/components/PullUpPage";
 
@@ -16,7 +17,8 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <div className={styles.container}>
-          <SearchBar />
+          {/* <SearchBar /> */}
+          <SearchBarButton/>
           <MapPage />
           <NavBar />
           <PullUpPage/>

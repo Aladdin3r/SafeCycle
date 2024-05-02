@@ -4,9 +4,18 @@ import Header from "@/components/Header";
 import styles from "@/styles/quiz.module.css";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
-import Button from "@/components/Button"
+import Button from "@/components/Button";
+import { useEffect } from "react";
 
 export default function QuizHome() {
+
+    const resetCorrectCount = () => {
+        sessionStorage?.removeItem('correctCount');
+    };
+    useEffect(() => {
+        resetCorrectCount();
+    }, []);
+
     return(
         <>
             <Head>

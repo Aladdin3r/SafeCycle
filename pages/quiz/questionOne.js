@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { questions } from "../../data/quizData";
+=======
+// import { questions } from "../../data/quizData";
+import { questions } from "./quizData";
+>>>>>>> 40ef6a29181a2d73566f5aed1c519bbb5187b6aa
 import Answer from "@/components/Answer";
 import { useState } from "react";
 import styles from "@/styles/quiz.module.css";

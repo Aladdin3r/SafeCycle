@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
 import SearchBar from "@/components/SearchBar";
 import MapPage from "@/components/Map";
-
+import PullUpPage from "@/components/PullUpPage";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
           <SearchBar />
           <MapPage />
           <NavBar />
-          
+          <PullUpPage/>
         </div>
       </main>
     </>

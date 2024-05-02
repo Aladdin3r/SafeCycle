@@ -15,7 +15,7 @@ export default function NearbyActivity() {
         </Head>
             <main className={`${styles.main}`}>
                     <div className={styles.container}>
-                        <Header title="Hazards"/>
+                        <Header title="Hazards" showBackButton={true}/>
                         <div>
                             <NearbyActivityCard 
                             title={"Car Crash"}
@@ -25,9 +25,12 @@ export default function NearbyActivity() {
                             likeCount={35}
                             commentCount={3}
                             username={"@Jackdoe"}
+                            comments={[
+                                { profilePicture: 'icons/profile-icon-orange.svg', username: 'User1', comment: 'Very useful thank you!' },
+                                { profilePicture: 'icons/profile-icon-pink.svg', username: 'User2', comment: 'I disagree with the main point.' },
+                            ]}
                             />
                         </div>
-                        <NavBar />
                     </div>
             </main>
         </>

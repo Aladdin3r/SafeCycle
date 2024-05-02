@@ -16,6 +16,14 @@
   margin: 0;
 }
 
+/* Animation Page */
+.animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80%;
+}
 
   /* Welcome Page */
 

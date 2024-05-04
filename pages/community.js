@@ -42,6 +42,18 @@ export default function Community() {
                                 </div>
                             </button>
                         </Link>
+                        <Link href="./faq">
+                            <button className={styles.cardButton}>
+                                <div className={styles.nearbyActivity}>
+                                    <div className={styles.cardContainer}>
+                                        <div className={styles.nearbyImage}>
+                                            <Image src="/images/faq.webp" width={120} height={130}/>
+                                        </div>
+                                    </div>
+                                    <p>FAQ</p>
+                                </div>
+                            </button>
+                        </Link>
                     </div>
 
                     <NavBar/>

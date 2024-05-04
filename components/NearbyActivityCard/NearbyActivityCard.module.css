@@ -1,11 +1,12 @@
 .cardContainer {
     display: flex;
     flex-direction: column;
-    width: 372px;
+    width: 382px;
     height: auto;
     background-color: var(--grey);
     border-radius: 20px;
     transition: height 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .information {

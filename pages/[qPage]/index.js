@@ -1,6 +1,6 @@
 "use client"
 import QuizTemplate from "@/components/QuizTemplate"
-import { questions } from "../../../data/quizData"
+import { questions } from "../../data/quizData"
 import { useEffect, useState } from "react"
 
 export default function Quiz(params) {

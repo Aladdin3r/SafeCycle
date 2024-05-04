@@ -6,6 +6,7 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Button from "@/components/Button";
 import { useEffect } from "react";
+import PieChart from "@/components/PieChart";
 
 export default function QuizHome() {
 
@@ -34,7 +35,7 @@ export default function QuizHome() {
                         <h3>To this day road related injuries are a leading cause of hospitalizations in Canada. <br/> Take this quiz to remind yourself of the safest practices for pedestrians and cyclists to follow!</h3>
                     </div>
                     <div className={styles.quizHomeGraph}>
-                        <BarChart />
+                        <PieChart />
                     </div>
                     <div className={styles.startButtonContainer}>
                             <Button 

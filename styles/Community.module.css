@@ -16,11 +16,13 @@
     align-items: center;
   }
 
-.cards {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
   
 .cardContainer {
   display: flex;

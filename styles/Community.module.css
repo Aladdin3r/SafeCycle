@@ -4,22 +4,25 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 20vh;
+  margin: 0;
+  overflow: hidden;
 }
 
-.navcontainer {
+.container {
     width: 430px;
     height: 932px;
-    padding-top:50px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
 }
   
 .cardContainer {

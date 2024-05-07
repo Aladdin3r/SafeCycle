@@ -15,7 +15,7 @@ export default function Community() {
                 <link rel="icon" href="/favicon3.png" /> 
             </Head>
             <main className={`${styles.main}`}>
-                <div className={styles.navcontainer}>
+                <div className={styles.container}>
                     <Header title="Community"/>
                     <div className={styles.cards}>
                         <Link href="./nearbyActivity">
@@ -42,20 +42,19 @@ export default function Community() {
                                 </div>
                             </button>
                         </Link>
-                        <Link href="./faq">
+                        <Link href="./graphs">
                             <button className={styles.cardButton}>
                                 <div className={styles.nearbyActivity}>
                                     <div className={styles.cardContainer}>
                                         <div className={styles.nearbyImage}>
-                                            <Image src="/images/faq.webp" width={120} height={130}/>
+                                            <Image src="/icons/graphs.svg" width={120} height={130}/>
                                         </div>
                                     </div>
-                                    <p>FAQ</p>
+                                    <p>Facts</p>
                                 </div>
                             </button>
                         </Link>
                     </div>
-
                     <NavBar/>
                 </div>
             </main>

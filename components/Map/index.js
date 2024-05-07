@@ -3,7 +3,7 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 
 const containerStyle = {
-    width: '100vw',
+    width: '32.6vw',
     height: '90vh',
     marginTop: '10vh',
     touchAction: 'auto',

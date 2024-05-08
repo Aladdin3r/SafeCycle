@@ -1,4 +1,4 @@
-import { questions } from "./quizData";
+import { questions } from "@/data/quizData";
 import Answer from "@/components/Answer";
 import { useState } from "react";
 import styles from "@/styles/quiz.module.css";

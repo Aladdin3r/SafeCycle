@@ -31,7 +31,7 @@ const PullUpPage = ({ isVisible, toggleVisibility }) => {
     };
 
     const handleCloseClick = () => {
-        toggleVisibility(); // Invoke the toggleVisibility function to hide the PullUpPage
+        toggleVisibility();
     };
 
     return (

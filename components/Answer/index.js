@@ -8,14 +8,21 @@ export default function Answer({ option, text, correctAnswer, onNext, lesson, ta
     const [selected, setSelected] = useState(sessionStorage?.getItem('selectedAnswer') === text);
     const [lessonShown, setLessonShown] = useState(false);
 
+
+
     const handleAnswerClick = () => {
         setSelected(true);
         sessionStorage?.setItem('selectedAnswer', text);
         if (text !== correctAnswer) {
             setLessonShown(true);
+        } else {
+            const correctCount = parseInt(sessionStorage?.getItem('correctCount')) || 0;
+            sessionStorage?.setItem('correctCount', correctCount + 1);
         }
         onNext(text === correctAnswer);
     };
+
+
 
     return (
         <div>

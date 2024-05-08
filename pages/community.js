@@ -42,7 +42,7 @@ export default function Community() {
                                 </div>
                             </button>
                         </Link>
-                        <Link href="./graphs">
+                        <Link href="./graph">
                             <button className={styles.cardButton}>
                                 <div className={styles.nearbyActivity}>
                                     <div className={styles.cardContainer}>

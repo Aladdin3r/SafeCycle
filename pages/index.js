@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-
 export default function Home() {
   const router = useRouter();
 

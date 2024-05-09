@@ -1,8 +1,8 @@
+'use client'
 import Image from "next/image";
 import Head from "next/head";
 import Header from "@/components/Header";
 import styles from "@/styles/quiz.module.css";
-import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Button from "@/components/Button"
 
@@ -19,7 +19,7 @@ export default function QuizHome() {
                 <Header title="Quiz"/>
                 <div className={styles.quizHomeContainer}>
                     <div className={styles.quizHomeTitle}>
-                        <h3>Ready to see if you’re a good pedestrian? <br/> Take the Quiz!</h3>
+                        <h3>Ready to see if you`re a good pedestrian? <br/> Take the Quiz!</h3>
                     </div>
                     <Image className={styles.quizHomeImage} src="/images/quizHome.jpeg" alt="image of a pedestrian crossing the street" width={318} height={212} />
                     <div className={styles.quizHomeDescription}>

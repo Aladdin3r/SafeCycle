@@ -13,7 +13,7 @@ export default function QuestionTwo() {
         <>
             <div className={styles.quizOneContainer}>
                 <h3 className={styles.question}>{currentQuestion.qText}</h3>
-                <Image className={styles.quizImage} src="/images/quiz2.jpeg" alt="image of family walking through crosswalk" width={318} height={212} />
+                <Image className={styles.quizImage2} src="/images/quiz2.jpeg" alt="image of family walking through crosswalk" width={287} height={199} />
                 <div className={`${styles.answerContainer} quiz`}>
                     {currentQuestion.choices.map((choice, index) => (
                         <Answer

@@ -1,0 +1,169 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    height: auto;
+    background-color: var(--grey);
+    border-radius: 20px;
+    transition: height 0.3s ease;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.cardImage {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 5px solid var(--light-grey);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 15px;
+}
+
+.cardContent h2 {
+    font-family: Urbanist;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.cardContent h4 {
+    font-family: Urbanist;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.cardContent h3 {
+    font-family: Urbanist;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.extraDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 5px;
+}
+
+.extraDetails h9 {
+    font-family: Urbanist;
+    font-size: 12px;
+    color: var(button);
+}
+
+.likesAndComments {
+    border-top: 1px solid var(--light-grey);
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.likes {
+    display: flex;
+    flex-direction: row;
+    padding-right: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.likes h8 {
+    margin-left: 5px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    padding-right: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments h8 {
+    margin-left: 5px;
+}
+
+.expanded {
+    height: auto;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+}
+
+.profileComment {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.profileComment p {
+    margin: 0px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.commentContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.commentContent p {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+
+.commentInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 15px 0px;
+}
+
+.commentInput input {
+    width: 100%;
+    height: 20px;
+    border: 1x solid var(--light-grey);
+    border-radius: 20px;
+    padding-right: 5px 5px 5px 10px;
+    margin: 0px 10px;
+    font-family: Urbanist;
+    color: var(--text-color-dark);
+}
+
+.commentInput input:focus {
+    outline: none; 
+    border-color: transparent;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

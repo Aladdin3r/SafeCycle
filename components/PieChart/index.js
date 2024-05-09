@@ -29,16 +29,16 @@ export default function BarChart() {
                     label: '# of Votes',
                     data: [35, 10, 40, 5,],
                     borderColor: [
-                    'rgb(20, 20, 20)',
-                    'rgb(20, 20, 20)',
-                    'rgb(20, 20, 20)',
-                    'rgb(20, 20, 20)',
+                        'rgb(173, 186, 98)',
+                        'rgb(241, 201, 98)',
+                        'rgb(244, 159, 62)',
+                        'rgb(224, 109, 67)',
                 ],
                 backgroundColor: [
-                    'rgb(253, 18, 31)',
-                    'rgb(23, 126, 204)',
-                    'rgb(31, 187, 94)',
-                    'rgb(255, 253, 57)',
+                    'rgb(173, 186, 98)',
+                    'rgb(241, 201, 98)',
+                    'rgb(244, 159, 62)',
+                    'rgb(224, 109, 67)',
                 ],
                     
                     borderWidth: 1,
@@ -64,7 +64,7 @@ export default function BarChart() {
         <>
         
         <div>
-            <Pie data={chartData} options={chartOptions} style={{width: "500px"}}/>
+            <Pie data={chartData} options={chartOptions} style={{width: "400px"}}/>
         </div>
 
 

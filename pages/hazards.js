@@ -57,7 +57,11 @@ export default function Hazards() {
                                 altText="Car Crash Icon"
                                 width={46.461}
                                 height={48}
+<<<<<<< HEAD
                                 title={"Car Crash"}
+=======
+                                title={"Other"}
+>>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
                             />
                         </div>
                         <NavBar />
@@ -65,4 +69,8 @@ export default function Hazards() {
             </main>
         </>
     )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67

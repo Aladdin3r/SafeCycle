@@ -5,6 +5,12 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+<<<<<<< HEAD
+=======
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+>>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
 }
 
 .container {
@@ -15,6 +21,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
+=======
+  margin: 0;
+  overflow-y: hidden;
+>>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
 }
 
 .button {

@@ -4,7 +4,11 @@
     align-items: center;
     position: fixed;
     bottom: 0;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 430px;
+>>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
     background-color: white;
     background-color: var(--white);
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
@@ -14,7 +18,10 @@
     display: flex;
     justify-content: center;
     height: 116px;
+<<<<<<< HEAD
     max-width: 100%;
+=======
+>>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
     overflow-x: auto;
 }
 

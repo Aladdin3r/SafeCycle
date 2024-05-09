@@ -27,7 +27,7 @@ export default function BarChart() {
             datasets:[
                 {
                     label: '# of Votes',
-                    data: [35, 10, 40, 5,],
+                    data: [10, 5, 80 , 5,],
                     borderColor: [
                         'rgb(173, 186, 98)',
                         'rgb(241, 201, 98)',

@@ -31,8 +31,6 @@
     gap: 1em;
 }
 
-
-
 .feedback {
     text-align: center;
     margin-top: 3em;
@@ -50,9 +48,14 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 212px; 
 }
 
+.quizImage2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 25px;
+}
 /* Quiz Home */
 
 

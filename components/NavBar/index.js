@@ -2,6 +2,7 @@ import styles from './NavBar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import React from 'react';
 
 export default function NavBar() {
     const router = useRouter();
@@ -29,7 +30,7 @@ export default function NavBar() {
 
 function NavItem({ href, active, iconInactive, iconActive, text }) {
     return (
-        <Link href={href} passHref className={styles.iconlink}>
+        <Link href={href} replace className={styles.iconlink} >
             <li className={`${styles.navigation} ${active ? styles.active : ''}`}>
                 <Image src={active ? iconActive : iconInactive} width={25} height={25} />
                 {text}

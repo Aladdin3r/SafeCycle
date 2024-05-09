@@ -44,3 +44,20 @@ export default function Answer({ option, text, correctAnswer, onNext, lesson, ta
         </div>
     );
 }
+
+// import styles from "./Answer.module.css";
+
+// export default function Answer({ option, text, correctAnswer, onSelection, selected, disabled }) {
+//     const handleAnswerClick = () => {
+//         if (!disabled) {
+//             onSelection(text);
+//         }
+//     };
+
+//     return (
+//         <div className={`${styles.answerBox} ${selected ? styles.selected : ''} ${selected && text === correctAnswer ? styles.correct : ''}`} onClick={handleAnswerClick} disabled={disabled}>
+//             <input type="radio" name="answer" className={styles.radioButton} checked={selected} onChange={() => {}} disabled={disabled} />
+//             <label className={styles.label}>{option}. {text}</label>
+//         </div>
+//     );
+// }

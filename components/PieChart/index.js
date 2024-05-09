@@ -59,7 +59,7 @@ export default function BarChart() {
                 responsive: true,
             }
         })
-    })
+    }, [])
     return(
         <>
         

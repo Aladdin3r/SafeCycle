@@ -26,7 +26,7 @@ export default function NavBar() {
                             Maps
                         </li>
                     </Link>
-                    <Link href="/quiz/quizHome" className={styles.iconlink}>
+                    <Link href="/quizHome" className={styles.iconlink}>
                         <li className={styles.list}>
                             <Image src="./icons/nav-quiz-outline.svg" width={25} height={25} />
                             Quiz

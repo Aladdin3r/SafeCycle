@@ -11,7 +11,7 @@ export default function QuestionTwo() {
 
     return (
         <>
-            <div className={styles.quizOneContainer}>
+            <div className={styles.quizContainer}>
                 <h3 className={styles.question}>{currentQuestion.qText}</h3>
                 <Image className={styles.quizImage2} src="/images/quiz2.jpeg" alt="image of family walking through crosswalk" width={287} height={199} />
                 <div className={`${styles.answerContainer} quiz`}>

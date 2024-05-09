@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-<<<<<<< HEAD
   min-height: 20vh;
 }
 
@@ -12,7 +11,6 @@
     width: 430px;
     height: 932px;
     padding-top:50px;
-=======
   margin: 0;
   overflow: hidden;
 }
@@ -21,24 +19,17 @@
     width: 430px;
     height: 932px;
     padding-top: 50px;
->>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
 .cards {
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-=======
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     justify-items: center;
     align-items: center;
->>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
 }
   
 .cardContainer {
@@ -56,8 +47,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
-=======
 }
 
 .nearbyActivity p {
@@ -78,5 +67,4 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
->>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
 }

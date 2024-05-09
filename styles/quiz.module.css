@@ -56,8 +56,6 @@
 /* Quiz Home */
 
 
-<<<<<<< HEAD
-=======
 .quizHomeContainer {
     display: flex;
     flex-direction: column;
@@ -65,15 +63,11 @@
     align-items: center;
 }
 
->>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
 .quizHomeTitle {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-<<<<<<< HEAD
-    margin-top: 150px;
-=======
     margin-top: 100px;
 }
 
@@ -81,16 +75,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
->>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
 }
 
 .quizHomeDescription {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     align-items: center;
     flex-direction: column;
     margin-top: 150px;
+    max-width: 350px;
 }
 .quizHomeGraph{
     display: flex;
@@ -98,11 +91,9 @@
     align-items: center;
     flex-direction: column;
     margin-top: 150px;
-=======
     align-content: center;
     flex-direction: column;
     margin-top: 50px;
->>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
 }
 
 .quizHomeTitle h2 {

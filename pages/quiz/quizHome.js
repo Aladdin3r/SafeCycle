@@ -5,10 +5,7 @@ import styles from "@/styles/quiz.module.css";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Button from "@/components/Button"
-<<<<<<< HEAD
 import BarChart from "@/components/PieChart";
-=======
->>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
 
 export default function QuizHome() {
     return(
@@ -21,23 +18,6 @@ export default function QuizHome() {
             </Head>
             <main className={`${styles.main}`}>
                 <Header title="Quiz"/>
-<<<<<<< HEAD
-                <div>
-                    <div className={styles.quizHomeTitle}>
-                        <h3>Ready to see if you’re a good pedestrian? <br/> Take the Quiz!</h3>
-                    </div>
-                    <div className={styles.quizHomeDescription}>
-                        <h3>To this day road related injuries are a leading cause of hospitalizations in Canada. <br/> Take this quiz to remind yourself of the safest practices for pedestrians and cyclists to follow!</h3>
-                    </div>
-                    <div className={styles.quizHomeGraph}>
-                        <BarChart />
-                    </div>
-                    <div className={styles.startButtonContainer}>
-                            <Button 
-                                href="./questionOne"
-                                label="Take Quiz"
-                            />
-=======
                 <div className={styles.quizHomeContainer}>
                     <div className={styles.quizHomeTitle}>
                         <h3>Ready to see if you’re a good pedestrian? <br/> Take the Quiz!</h3>
@@ -51,7 +31,6 @@ export default function QuizHome() {
                             href="./questionOne"
                             label="Take Quiz"
                         />
->>>>>>> 684774ba243f559768ed9a83c71734aa5696cf67
                     </div>
                 </div>
                 <NavBar/>

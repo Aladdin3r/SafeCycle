@@ -23,7 +23,7 @@ export default function QuizHome() {
                     </div>
                     <Image className={styles.quizHomeImage} src="/images/quizHome.jpeg" alt="image of a pedestrian crossing the street" width={318} height={212} />
                     <div className={styles.quizHomeDescription}>
-                        <p>To this day road related injuries are a leadingç cause of hospitalizations in Canada. Take this quiz to remind yourself of the safest practices for pedestrians and cyclists to follow!</p>
+                        <p>To this day road related injuries are a leading cause of hospitalizations in Canada. Take this quiz to remind yourself of the safest practices for pedestrians and cyclists to follow!</p>
                     </div>
                     <div className={styles.startButtonContainer}>
                         <Button 

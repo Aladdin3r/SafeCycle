@@ -3,12 +3,13 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 
 const containerStyle = {
-    width: '32.6vw',
-    height: '100vh',
-    marginTop: '10vh',
+    width: '430px',
+    height: '820px',
     touchAction: 'auto',
     position: 'fixed',
-    zIndex: '0'
+    zIndex: '0',
+    top: 0,
+    bottom:'116px',
   };
 
 

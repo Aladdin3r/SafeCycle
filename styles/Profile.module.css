@@ -18,7 +18,7 @@
     }
 
     .profileIcon{
-        margin-top: 74px;
+        margin-top: 10px;
         margin-left: 16px;
         margin-right: 357px;
         position: absolute;
@@ -31,14 +31,23 @@
         line-height: 24px;
         margin-left: 117px;
         margin-right: 251px;
-        margin-top: 90px;
+        margin-top: 20px;
     }
 
-    .profileLocations{
-        margin-left: 11px;
+    .catagory{
+        margin-left: 130px;
         margin-right: 403px;
     }
 
+    .catagoryIcon{
+        position: absolute;
+        margin-left: 1px;
+    }
+
+    .catagoryText{
+        padding-left: 25px;
+        text-align: center;
+    }
     .selectorRectangle{
         width: 398px;
         height: 58px;

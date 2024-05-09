@@ -19,17 +19,41 @@ export default function Profile() {
               <Image className={`${styles.profileIcon}`} src="/icons/profile-icon.svg" width={57} height={55}/>
               <h2 className={`${styles.profileName}`}>John Jo</h2>
               </div>
-              <Image className={`${styles.profileLocations}`} src="/icons/profile-page-locations.svg" width={16} height={25}/>
-                <h2>
-                </h2>
-              <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
 
+
+              <h2 className={`${styles.catagory}`}>
+                <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-locations.svg" width={25} height={25}/>
+                <div className={`${styles.catagoryText}`}>Locations</div>
+              </h2>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Home</div></div>
+
+              <br/>
+
+              <h2 className={`${styles.catagory}`}>
+                <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-settings.svg" width={24} height={24}/>
+                <div className={`${styles.catagoryText}`}>Settings</div>
+              </h2>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>App Apearance</div></div>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Language</div></div>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>FAQ</div></div>
+                           
+                <br/>
+
+              <h2 className={`${styles.catagory}`}>
+                <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-notifications.svg" width={24} height={24}/>
+                <div className={`${styles.catagoryText}`}>Notifications</div>
+              </h2>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Alert Frequency</div></div>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Alert Places</div></div>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Abvanced Aler Settings</div></div>
               
 
 
                 <div className={styles.container}>
 
                 </div>
+                <NavBar/>
             </main>
     </>
   )  

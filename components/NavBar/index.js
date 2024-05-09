@@ -1,4 +1,3 @@
-import nextConfig from '@/next.config.mjs'
 import styles from './NavBar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'

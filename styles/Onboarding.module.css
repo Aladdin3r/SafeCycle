@@ -22,8 +22,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80%;
   visibility: visible;
+  height: 40%;
+  width: 40%;
+  margin: auto;
+  margin-top: 25%;
 }
 
   /* Welcome Page */

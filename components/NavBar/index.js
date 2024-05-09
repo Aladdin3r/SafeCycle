@@ -1,4 +1,3 @@
-import nextConfig from '@/next.config.mjs'
 import styles from './NavBar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -27,13 +26,13 @@ export default function NavBar() {
                             Maps
                         </li>
                     </Link>
-                    <Link href="/quiz/quizHome" className={styles.iconlink}>
+                    <Link href="/quizHome" className={styles.iconlink}>
                         <li className={styles.list}>
                             <Image src="./icons/nav-quiz-outline.svg" width={25} height={25} />
                             Quiz
                         </li>
                     </Link>
-                    <Link href="/pages/profile" className={styles.iconlink}>
+                    <Link href="/profile" className={styles.iconlink}>
                         <li className={styles.list}>
                             <Image src="./icons/nav-profile-outline.svg" width={25} height={25} />
                             Profile

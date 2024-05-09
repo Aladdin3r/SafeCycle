@@ -4,6 +4,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
+  min-height: 20vh;
+}
+
+.navcontainer {
+    width: 430px;
+    height: 932px;
+    padding-top:50px;
   margin: 0;
   overflow: hidden;
 }

@@ -32,7 +32,7 @@ export default function NavBar() {
                             Quiz
                         </li>
                     </Link>
-                    <Link href="/pages/profile" className={styles.iconlink}>
+                    <Link href="/profile" className={styles.iconlink}>
                         <li className={styles.list}>
                             <Image src="./icons/nav-profile-outline.svg" width={25} height={25} />
                             Profile

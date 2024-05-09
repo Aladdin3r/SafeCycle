@@ -28,7 +28,6 @@ export default function Home() {
                 <Button 
                     href="./maps"
                     label="Log in"
-
                 />
             </div>
             <div className={styles.orWith}>

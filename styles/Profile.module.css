@@ -17,18 +17,18 @@
       align-items: center;
     }
 
-    .catagory{
+    .category{
         margin-left: 130px;
         margin-right: 403px;
         margin-top: 30px;
     }
 
-    .catagoryIcon{
+    .categoryIcon{
         position: absolute;
         margin-left: 1px;
     }
 
-    .catagoryText{
+    .categoryText{
         padding-left: 25px;
         text-align: center;
     }
@@ -47,4 +47,9 @@
         line-height: 16px;
         margin-top: 19px;
         margin-left: 11px;
+    }
+
+    .selectorRectangle:hover {
+        background-color: var(--button-color);
+        color: white;
     }

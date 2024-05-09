@@ -3,7 +3,6 @@ import styles from "@/styles/Onboarding.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import Lottie from "lottie-web";
 
 export default function Home() {
   const router = useRouter();

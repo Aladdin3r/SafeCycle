@@ -6,7 +6,7 @@ import BarChart from "@/components/PieChart";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Facts() {
+export default function Graph() {
     return(
         <>
             <Head>

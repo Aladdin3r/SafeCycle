@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     height: 116px;
+    max-width: 100%;
     overflow-x: auto;
 }
 

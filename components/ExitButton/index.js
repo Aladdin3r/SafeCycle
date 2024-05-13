@@ -1,11 +1,12 @@
 import styles from "./ExitButton.module.css"
+import Image from "next/image"
 
-export default function ExitButton {
+export default function ExitButton() {
     return(
         <>
-            <button>
-                
-            </button>
+            <div className={styles.container}>
+                <Image src="/icons/close-outline.svg" alt="close" width={40} height={40} />
+            </div>
         </>
     )
 }

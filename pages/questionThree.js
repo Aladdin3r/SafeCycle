@@ -11,9 +11,9 @@ export default function QuestionThree() {
 
     return (
         <>
-            <div className={styles.quizOneContainer}>
+            <div className={styles.quizContainer}>
                 <h3 className={styles.question}>{currentQuestion.qText}</h3>
-                <Image className={styles.quizImage} src="/images/quiz3.jpeg" alt="image of family walking through crosswalk" width={318} height={212} />
+                <Image className={styles.quizImage} src="/images/quiz3.jpeg" alt="image of family walking through crosswalk" width={256} height={212} />
                 <div className={`${styles.answerContainer} quiz`}>
                     {currentQuestion.choices.map((choice, index) => (
                         <Answer

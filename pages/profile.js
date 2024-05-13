@@ -17,22 +17,24 @@ export default function Profile() {
             <main className={`${styles.main}`}>
               <Header title={"Profile"}/>
               <div>
-              <Image className={`${styles.profileIcon}`} src="/icons/profile-icon.svg" width={57} height={55}/>
-              <h2 className={`${styles.profileName}`}>John Jo</h2>
+                <div className={`${styles.category}`}>
+              <Image className={`${styles.categoryIcon}`} src="/icons/profile-icon.svg" width={57} height={55}/>
+              <h2 className={`${styles.categoryTextName}`}>John Jo</h2>
+              </div>
               </div>
 
               <div> 
-              <h2 className={`${styles.catagory}`}>
-                <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-locations.svg" width={25} height={25}/>
-                <div className={`${styles.catagoryText}`}>Locations</div>
+              <h2 className={`${styles.category}`}>
+                <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-locations.svg" width={24} height={24}/>
+                <div className={`${styles.categoryText}`}>Locations</div>
               </h2>
               </div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Home</div></div>
 
               
-              <div>
-              <h2 className={`${styles.category}`}>
+             <div>
+               <h2 className={`${styles.category}`}>
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-settings.svg" width={24} height={24}/>
                 <div className={`${styles.categoryText}`}>Settings</div>
               </h2>

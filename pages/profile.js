@@ -20,33 +20,36 @@ export default function Profile() {
               <h2 className={`${styles.profileName}`}>John Jo</h2>
               </div>
 
-              
-              <div className={`${styles.catagory}`}>
+              <div> 
+              <h2 className={`${styles.catagory}`}>
                 <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-locations.svg" width={25} height={25}/>
                 <div className={`${styles.catagoryText}`}>Locations</div>
               <Header title={"Profile"}/>
+              </h2>
               </div>
-            
-              <div className={`${styles.category}`}>
+              <div>
+              <h2 className={`${styles.category}`}>
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-locations.svg" width={25} height={25}/>
                 <div className={`${styles.categoryText}`}>Locations</div>
+              </h2>
               </div>
               
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Home</div></div>
 
               <br/>
-              
-              <div className={`${styles.catagory}`}>
+              <div>
+              <h2 className={`${styles.catagory}`}>
                 <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-settings.svg" width={24} height={24}/>
                 <div className={`${styles.catagoryText}`}>Settings</div>
+              </h2>
               </div>
-              
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>App Apearance</div></div>
-
-              <div className={`${styles.category}`}>
+              <div>
+              <h2 className={`${styles.category}`}>
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-settings.svg" width={24} height={24}/>
                 <div className={`${styles.categoryText}`}>Settings</div>
+              </h2>
               </div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>App Appearance</div></div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Language</div></div>
@@ -59,10 +62,12 @@ export default function Profile() {
                 <div className={`${styles.catagoryText}`}>Notifications</div>
                 </h2>
               </div>
+              <div>
               <h2 className={`${styles.category}`}>
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-notifications.svg" width={24} height={24}/>
                 <div className={`${styles.categoryText}`}>Notifications</div>
               </h2>
+              </div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Alert Frequency</div></div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Alert Places</div></div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Advanced Alert Settings</div></div>

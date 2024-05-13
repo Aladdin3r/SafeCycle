@@ -15,15 +15,34 @@ export default function Profile() {
                 <link rel="icon" href="/favicon3.png" /> 
             </Head>
             <main className={`${styles.main}`}>
+              <div>
+              <Image className={`${styles.profileIcon}`} src="/icons/profile-icon.svg" width={57} height={55}/>
+              <h2 className={`${styles.profileName}`}>John Jo</h2>
+              </div>
+
+              <div> 
+              <h2 className={`${styles.catagory}`}>
+                <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-locations.svg" width={25} height={25}/>
+                <div className={`${styles.catagoryText}`}>Locations</div>
               <Header title={"Profile"}/>
+              </h2>
+              </div>
               <h2 className={`${styles.category}`}>
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-locations.svg" width={25} height={25}/>
                 <div className={`${styles.categoryText}`}>Locations</div>
               </h2>
+              
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Home</div></div>
 
               <br/>
+              <div>
+              <h2 className={`${styles.catagory}`}>
+                <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-settings.svg" width={24} height={24}/>
+                <div className={`${styles.catagoryText}`}>Settings</div>
+              </h2>
+              </div>
+                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>App Apearance</div></div>
 
               <h2 className={`${styles.category}`}>
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-settings.svg" width={24} height={24}/>
@@ -34,7 +53,12 @@ export default function Profile() {
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>FAQ</div></div>
                            
                 <br/>
-
+              <div>
+              <h2 className={`${styles.catagory}`}>
+                <Image className={`${styles.catagoryIcon}`} src="/icons/profile-page-notifications.svg" width={24} height={24}/>
+                <div className={`${styles.catagoryText}`}>Notifications</div>
+                </h2>
+              </div>
               <h2 className={`${styles.category}`}>
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-notifications.svg" width={24} height={24}/>
                 <div className={`${styles.categoryText}`}>Notifications</div>

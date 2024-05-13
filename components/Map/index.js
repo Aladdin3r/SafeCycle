@@ -4,12 +4,11 @@ import styles from "./Map.module.css"
 
 const containerStyle = {
   width: '430px',
-  height: '820px',
+  height: '950px',
   touchAction: 'auto',
   position: 'fixed',
   zIndex: '0',
   top: 0,
-  bottom: '116px',
 };
 
 const center = {

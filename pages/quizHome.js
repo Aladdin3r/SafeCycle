@@ -21,7 +21,7 @@ export default function QuizHome() {
                     <div className={styles.quizHomeTitle}>
                         <h3>Ready to see if you`re a good pedestrian? <br/> Take the Quiz!</h3>
                     </div>
-                    <Image className={styles.quizHomeImage} src="/images/quizHome.jpeg" alt="image of a pedestrian crossing the street" width={318} height={212} />
+                    <Image className={styles.quizHomeImage} src="/images/quizhome.jpeg" alt="image of a pedestrian crossing the street" width={318} height={212} />
                     <div className={styles.quizHomeDescription}>
                         <p>To this day road related injuries are a leading cause of hospitalizations in Canada. Take this quiz to remind yourself of the safest practices for pedestrians and cyclists to follow!</p>
                     </div>

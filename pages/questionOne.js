@@ -11,7 +11,7 @@ export default function QuestionOne() {
 
     return (
         <>
-            <div className={styles.quizOneContainer}>
+            <div className={styles.quizContainer}>
                 <h3 className={styles.question}>{currentQuestion.qText}</h3>
                 <Image className={styles.quizImage} src="/images/quiz1.jpeg" alt="image of family walking through crosswalk" width={318} height={212} />
                 <div className={`${styles.answerContainer} quiz`}>
@@ -44,3 +44,65 @@ export default function QuestionOne() {
         </>
     );
 }
+
+// import { useEffect, useState } from "react";
+// import { useRouter } from "next/router";
+// import { questions } from "@/data/quizData";
+// import Answer from "@/components/Answer";
+// import Button from "@/components/Button";
+// import styles from "@/styles/quiz.module.css";
+// import Image from "next/image";
+
+// export default function QuestionOne() {
+//     const router = useRouter();
+//     const currentQuestion = questions[0];
+//     const [selectedAnswer, setSelectedAnswer] = useState(null);
+//     const [lessonShown, setLessonShown] = useState(false);
+
+//     const handleAnswerSelection = (selected) => {
+//         setSelectedAnswer(selected);
+//     };
+
+//     const handleSubmit = () => {
+//         if (selectedAnswer !== null) {
+//             const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+//             setLessonShown(true);
+//             router.push({
+//                 pathname: isCorrect ? "/correctPage" : "/incorrectPage",
+//                 query: { lesson: currentQuestion.lesson }
+//             });
+//         }
+//     };
+
+//     return (
+//         <div className={styles.quizContainer}>
+//             <h3 className={styles.question}>{currentQuestion.qText}</h3>
+//             <Image className={styles.quizImage} src="/images/quiz1.jpeg" alt="image of family walking through crosswalk" width={318} height={212} />
+//             <div className={`${styles.answerContainer} quiz`}>
+//                 {currentQuestion.choices.map((choice, index) => (
+//                     <Answer
+//                         key={index}
+//                         option={String.fromCharCode(65 + index)}
+//                         text={choice}
+//                         correctAnswer={currentQuestion.correctAnswer}
+//                         onSelection={handleAnswerSelection}
+//                         selected={selectedAnswer === choice}
+//                         disabled={lessonShown}
+//                     />
+//                 ))}
+//             </div>
+//             {lessonShown && (
+//                 <div className={styles.feedback}>
+//                     {selectedAnswer === currentQuestion.correctAnswer ? "Correct!" : "Incorrect!"}
+//                 </div>
+//             )}
+//             <div className={styles.navigate}>
+//                 <Button
+//                     label="Submit Answer"
+//                     onClick={handleSubmit}
+//                     disabled={selectedAnswer === null || lessonShown}
+//                 />
+//             </div>
+//         </div>
+//     );
+// }

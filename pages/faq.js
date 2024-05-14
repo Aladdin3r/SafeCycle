@@ -18,12 +18,10 @@ export default function faq() {
                  <Header title="FAQ" showBackButton={true}/>
                         <div> 
                         <FaqCard 
-                            text={"yeah"} 
-                            />
+                            text={"yeah"}/>
                             <div className={`${styles.selectorRectangle}`}> 
                             <div className={`${styles.selectorRectangleText}`}> 
-                            <FaqCard 
-                            text={"yeah"}/></div></div>
+                            </div></div>
                             <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
                             <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
                             <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>

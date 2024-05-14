@@ -20,7 +20,10 @@ export default function faq() {
                         <FaqCard 
                             text={"yeah"} 
                             />
-                            <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
+                            <div className={`${styles.selectorRectangle}`}> 
+                            <div className={`${styles.selectorRectangleText}`}> 
+                            <FaqCard 
+                            text={"yeah"}/></div></div>
                             <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
                             <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
                             <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>

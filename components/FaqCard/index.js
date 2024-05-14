@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './FaqCard.module.css'; 
-import Image from 'next/image';
 
 const FaqCard = ({ text }) => {
     const [showText, setShowText] = useState(false);
@@ -21,23 +20,16 @@ const FaqCard = ({ text }) => {
 
     return (
         <div className={styles.cardContainer}>
-            <div className={styles.information}>
+            <div className={styles.text}>
 
             </div>
-            <div className={styles.likesAndComments}>
-                <div className={styles.likes}>
-                {text}
-                </div>
-                <div className={styles.text} onClick={toggleText}>
-                    <p>yeah</p>
-                </div>
-            </div>
-            {showComments && (
+            
+          
+            {showText && (
                 <div className={styles.commentsContainer}>
-                    {comments.map((comment, index) => (
+                    {text.map((text, index) => (
                         <div key={index} className={styles.comment}>
                             <div className={styles.profileComment}>
-                                <Image src={comment.profilePicture} width={30} height={30}/>
                                 <p>{comment.username}</p>
                             </div>
                             <div className={styles.commentContent}>
@@ -45,7 +37,7 @@ const FaqCard = ({ text }) => {
                             </div>
                         </div>
                     ))}
-                    {/* <div className={styles.commentInput}>
+                    <div className={styles.commentInput}>
                         <Image src='icons/profile-icon-teal.svg' width={30} height={30}/>
                         <input 
                             className={styles.commentInput}
@@ -57,7 +49,7 @@ const FaqCard = ({ text }) => {
                         <div onClick={handleSubmitComment} className={styles.submitButton}>
                             <Image src="/icons/submit.svg" alt="Send Icon" width={30} height={30} />
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             )}
         </div>

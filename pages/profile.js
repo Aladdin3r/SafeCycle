@@ -22,7 +22,6 @@ export default function Profile() {
               </h2>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Saved</div></div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Home</div></div>
-
               <br/>
 
               <h2 className={`${styles.category}`}>

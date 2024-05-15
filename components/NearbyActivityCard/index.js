@@ -30,7 +30,7 @@ const NearbyActivityCard = ({ title, imageUrl, description, distance, location, 
                 </div>
                 <div className={styles.extraDetails}>
                     <img src={imageUrl} alt={title} className={styles.cardImage} />
-                    <h9>Tap to see on map</h9>
+                    <a href='/maps'><h9>Tap to see on map</h9></a>
                 </div>
             </div>
             <div className={styles.likesAndComments}>

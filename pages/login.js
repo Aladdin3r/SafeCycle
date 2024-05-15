@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "@/styles/Onboarding.module.css";
-import Image from "next/image";
 import Button from "@/components/Button";
 import TextBox from "@/components/TextBox";
 
@@ -28,6 +27,7 @@ export default function Home() {
                 <Button 
                     href="./maps"
                     label="Log in"
+                    width="372px"
                 />
             </div>
             <div className={styles.orWith}>
@@ -38,18 +38,21 @@ export default function Home() {
                     src="/icons/google.webp"
                     label="Login with Google"
                     style="secondary"
+                    width="372px"
                   />
                   <Button
                     href="./maps"
                     src="/icons/apple.png"
                     label="Login with Apple"
                     style="secondary"
+                    width="372px"
                   />
                   <Button
                     href="./maps"
                     src="/icons/facebook.webp"
                     label="Login with Facebook"
                     style="secondary"
+                    width="372px"
                   />
               </div>
             </div>

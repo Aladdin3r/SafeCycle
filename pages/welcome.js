@@ -24,6 +24,7 @@ export default function Home() {
                 <Button 
                     href="./login"
                     label="Get Started !"
+                    width="372px"
                 />
             </div>
         </div>

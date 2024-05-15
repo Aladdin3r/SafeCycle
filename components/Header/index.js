@@ -12,7 +12,7 @@ export default function Header({ title, showBackButton }) {
         <div className={styles.container}>
             <div className={styles.back}>
                 {showBackButton && (
-                    <button onClick={goBack} className={styles.backButton}>
+                    <button onClick={goBack} tabIndex={1} className={styles.backButton}>
                         <img src="/icons/back-button.svg" className={styles.backIcon}/>
                     </button>
                 )}

@@ -20,6 +20,7 @@ export default function faq() {
                             <div >
                         <FaqCard 
                             answer={"How accurate is the estimated walking time?"}
+                            tabindex={1}
                             comments={[
                                 { comment: '(Answer)' },
                             ]}

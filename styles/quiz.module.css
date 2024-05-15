@@ -1,3 +1,10 @@
+.main {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .quizContainer {
     display: flex;
     flex-direction: column;

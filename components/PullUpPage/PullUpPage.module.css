@@ -3,7 +3,7 @@
     bottom: -100%; 
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 430px;
     height: auto; 
     max-height: 60%; 
     transition: bottom 0.3s ease; 

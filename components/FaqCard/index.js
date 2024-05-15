@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './FaqCard.module.css'; 
-import Image from 'next/image';
 
 
 let tabIndexCounter = 2;
@@ -24,7 +23,7 @@ const FaqCard = ({ title, imageUrl, description, distance, location, likeCount, 
     };
 
     return (
-        <div className={styles.cardContainer} tabIndex={tabIndex}>
+        <div className={styles.faqAnswerContainer}>
             <div className={styles.information}>
                 <div className={styles.cardContent}>
                     <h2 className={styles.cardTitle}>{title}</h2>
@@ -42,14 +41,17 @@ const FaqCard = ({ title, imageUrl, description, distance, location, likeCount, 
                     {/* <Image src="/icons/like.svg" alt="Like Icon" width={20} height={20} /> */}
                     <h8>{likeCount}</h8>
                 </div>
-                <div className={styles.comments} onClick={toggleComments}>
+                <div className={styles.faqAnswerOpen} onClick={toggleComments}>
                     {/* <Image src="/icons/comment.svg" alt="Comment Icon" width={20} height={20} /> */}
 
 
 
 
 
-                    <div className={styles.faqAnswer} >{answer}</div>
+                    <div tabIndex={tabIndex} className={styles.faqAnswer} onKeyDown={(event) => {
+                    if (event.key === 'Enter') {
+                    toggleComments();
+                    }}}>{answer}</div>
                     <h8>{commentCount}</h8>
                 </div>
             </div>

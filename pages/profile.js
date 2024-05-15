@@ -18,7 +18,7 @@ export default function Profile() {
               <Header title={"Profile"}/>
               <div>
                 <div className={`${styles.category}`}>
-              <Image className={`${styles.categoryIcon}`} src="/icons/profile-icon.svg" width={57} height={55}/>
+              <Image className={`${styles.categoryIcon}`} src="/images/UserProfile.png" width={57} height={55}/>
               <h2 className={`${styles.categoryTextName}`}>John Jo</h2>
               </div>
               </div>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 const SearchBarButton = ({ onClick }) => {
     return (
         <div className={styles.container}>
-            <button className={styles.searchbutton} onClick={onClick}>
+            <button tabIndex={1} className={styles.searchbutton} onClick={onClick}>
                 <div className={styles.search}>
                     <Image className={styles.searchIcon} src="./icons/search.svg" width={20} height={20} />
                     Search place

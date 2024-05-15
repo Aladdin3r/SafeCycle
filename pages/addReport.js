@@ -24,6 +24,7 @@ export default function addReport() {
                             type="text"
                             placeholder="Add a description">
                         </textarea>   
+                        <p>Add description (optional)</p>
                     </div>
                     <div className={styles.buttonContainer}>
                         <Button 

@@ -23,6 +23,10 @@ export default function Home() {
             </Head>
             <main className={styles.main}>
                 <div className={styles.container}>
+                    <SearchBarButton onClick={togglePullPage} />
+                    <PullUpPage tabindex={-1} isVisible={pullPageVisible} toggleVisibility={togglePullPage} />
+                    <MapPage tabindex={-1}/>
+                    <NavBar tabindex={-1}/>
                 </div>
             </main>
         </>

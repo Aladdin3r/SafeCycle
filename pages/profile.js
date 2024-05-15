@@ -42,7 +42,7 @@ export default function Profile() {
                 <div className={`${styles.categoryText}`}>Settings</div>
               </h2>
               </div>
-                <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>App Appearance</div></div>
+                <Link href="./appearance"> <div className={`${styles.selectorRectangle}`}>  <div className={`${styles.selectorRectangleText}`}>App Appearance</div></div></Link>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>Language</div></div>
                 <div className={`${styles.selectorRectangle}`}> <div className={`${styles.selectorRectangleText}`}>FAQ</div></div>
                            

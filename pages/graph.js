@@ -17,11 +17,15 @@ export default function Graph() {
             </Head>
             <main className={`${styles.main}`}>
                 <div className={styles.container}>
-                    <Header title="Facts"/>
+                    <Header title="Facts" showBackButton={true}/>
                     <div className={styles.graphContainer}>
                         <div className={styles.quizHomeGraph}>
                             <BarChart />
                         </div>
+                        <br/>
+                        <p>Following road safety guidelines and understanding traffic rules are paramount for both individuals and society as a whole. Adhering to these regulations helps prevent accidents, injuries, and even fatalities on the road, safeguarding not only the lives of drivers but also passengers, pedestrians, and cyclists.
+                             <br/>Moreover, obeying traffic laws promotes orderly and efficient traffic flow, reducing congestion and travel times. 
+                             This adherence fosters a sense of responsibility and respect among road users, contributing to a safer and more harmonious community environment. Ultimately, prioritizing road safety and knowing the rules not only preserves lives and prevents injuries but also enhances the overall quality of life for everyone sharing the road.</p>
                     </div>
                     <NavBar/>
                 </div>

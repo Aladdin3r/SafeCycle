@@ -21,13 +21,28 @@ export default function NearbyActivity() {
                             title={"Car Crash"}
                             imageUrl={"/icons/car-crash-3D.svg"}
                             distance={"0.2 miles away"}
-                            location={"4567 Lougheed Hwy., Burnaby, BC V5C 3Z6"}
+                            location={"Parking Lot BCIT near Roper Ave"}
                             likeCount={35}
                             commentCount={3}
                             username={"@Jackdoe"}
                             comments={[
                                 { profilePicture: 'icons/profile-icon-orange.svg', username: 'User1', comment: 'Very useful thank you!' },
                                 { profilePicture: 'icons/profile-icon-pink.svg', username: 'User2', comment: 'I disagree with the main point.' },
+                            ]}
+                            />
+                        </div>
+                        <br/>
+                        <div>
+                            <NearbyActivityCard 
+                            title={"Traffic Jam"}
+                            imageUrl={"/icons/traffic-3D.svg"}
+                            distance={"0.1 miles away"}
+                            location={"Roper Ave turning into Ford Ave"}
+                            likeCount={12}
+                            commentCount={1}
+                            username={"@Jackdoe"}
+                            comments={[
+                                { profilePicture: 'icons/profile-icon-orange.svg', username: 'User1', comment: 'Thank you!' },
                             ]}
                             />
                         </div>

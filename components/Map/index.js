@@ -16,14 +16,9 @@ const center = {
   lng: -122.9991,
 };
 
-const markerPosition = {
-  lat: 49.248722,
-  lng: -122.999617,
-};
+const customMarkerIcon = '/icons/crash-marker.png';
 
-const customMarkerIcon = 'icons/crash-marker.png';
-
-const MapPage = () => {
+const MapPage = ({ selectedHazard }) => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
@@ -49,25 +44,39 @@ const MapPage = () => {
     >
       {map && (
         <>
+          {/* Render default marker */}
           <Marker
-            position={markerPosition}
+            position={center}
             map={map}
             icon={{
-              url: customMarkerIcon,
+              url: 'icons/crash-marker.png',
               scaledSize: new window.google.maps.Size(50, 70),
             }}
             onClick={handleMarkerClick} 
           />
-          {isInfoWindowOpen && (
-            <InfoWindow
-              position={markerPosition}
-              onCloseClick={handleInfoWindowClose}
+          {/* Render selected hazard marker if a hazard is selected */}
+          {selectedHazard && (
+            <Marker
+              position={selectedHazard.coordinate}
+              map={map}
+              icon={{
+                url: customMarkerIcons[selectedHazard.type],
+                scaledSize: new window.google.maps.Size(50, 70),
+              }}
+              onClick={handleMarkerClick} 
             >
-              <div className={styles.infobox}>
-                <h3>Car Crash</h3>
-                <p>Collision between 2 SUV`s on Main street</p>
-              </div>
-            </InfoWindow>
+              {isInfoWindowOpen && (
+                <InfoWindow
+                  position={selectedHazard.coordinate}
+                  onCloseClick={handleInfoWindowClose}
+                >
+                  <div className={styles.infobox}>
+                    <h3>{selectedHazard.title}</h3>
+                    {/* You can add additional information here */}
+                  </div>
+                </InfoWindow>
+              )}
+            </Marker>
           )}
         </>
       )}

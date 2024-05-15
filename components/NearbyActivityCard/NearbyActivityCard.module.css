@@ -60,6 +60,10 @@
     padding: 15px 15px 15px 5px;
 }
 
+.extraDetails a h9 {
+    text-decoration: none;
+}
+
 .extraDetails h9 {
     font-family: Urbanist;
     font-size: 12px;

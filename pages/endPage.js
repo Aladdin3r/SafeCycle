@@ -22,6 +22,7 @@ export default function EndPage() {
                 <Button 
                     href="./maps"
                     label="Return to Map"
+                    width="372px"
                 />
             </div>
         </>

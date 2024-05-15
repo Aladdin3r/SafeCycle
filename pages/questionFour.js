@@ -39,6 +39,7 @@ export default function QuestionFour() {
                     href="./endPage"
                     label="Submit Answer"
                     disabled={answerStatus === null}
+                    width="372px"
                 />
             </div>
         </>

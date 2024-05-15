@@ -13,14 +13,7 @@ export default function Hazards() {
 
     const handleHazardClick = (coordinate, title, type) => {
         setSelectedHazard({ coordinate, title, type });
-        // router.push({
-        //     pathname: '/maps',
-        //     query: {
-        //         lat: coordinate.lat,
-        //         lng: coordinate.lng,
-        //         title: title
-        //     }
-        // });
+
     };
 
     const customMarkerIcons = {

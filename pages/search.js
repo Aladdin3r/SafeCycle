@@ -6,7 +6,7 @@ export default function Search() {
     return(
         <>
         <Head>
-            <title>SafeCycle</title>
+            <title>SafeCycle - Search</title>
             <meta name="description" content="SafeCycle is your ultimate pedestrian safety and navigation app. 
             Find the best and most recent routes and navigate your day without hazards." />
             <meta name="viewport" content="width=device-width, initial-scale=1" />

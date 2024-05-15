@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SafeCycle</title>
+        <title>SafeCycle - Welcome</title>
         <meta name="description" content="Home Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon3.png" />
@@ -24,6 +24,7 @@ export default function Home() {
                 <Button 
                     href="./login"
                     label="Get Started !"
+                    width="372px"
                 />
             </div>
         </div>

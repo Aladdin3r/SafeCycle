@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
 import styles from "./Map.module.css"
+import { useRouter } from 'next/router';
 
 const containerStyle = {
   width: '430px',
@@ -17,8 +18,9 @@ const center = {
 };
 
 const customMarkerIcon = '/icons/crash-marker.png';
+const NewMarkerIcon = '/icons/traffic-marker.png';
 
-const MapPage = ({ selectedHazard }) => {
+const MapPage = ({ customMarkerDescription }) => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
@@ -26,13 +28,31 @@ const MapPage = ({ selectedHazard }) => {
 
   const [map, setMap] = useState(null);
   const [isInfoWindowOpen, setIsInfoWindowOpen] = useState(false);
+  const [isCustomMarkerInfoWindowOpen, setIsCustomMarkerInfoWindowOpen] = useState(false);
+  const [description, setDescription] = useState('');
 
-  const handleMarkerClick = () => {
+  const router = useRouter();
+  const { query } = router;
+  const { description: queryDescription } = query;
+
+  useEffect(() => {
+    setDescription(queryDescription || '');
+    setIsInfoWindowOpen(!!queryDescription); 
+  }, [queryDescription]);
+
+  const handleDefaultMarkerClick = () => {
     setIsInfoWindowOpen(true);
+    setIsCustomMarkerInfoWindowOpen(false);
+  };
+
+  const handleCustomMarkerClick = () => {
+    setIsCustomMarkerInfoWindowOpen(true);
+    setIsInfoWindowOpen(false);
   };
 
   const handleInfoWindowClose = () => {
     setIsInfoWindowOpen(false);
+    setIsCustomMarkerInfoWindowOpen(false);
   };
 
   return isLoaded ? (
@@ -44,7 +64,6 @@ const MapPage = ({ selectedHazard }) => {
     >
       {map && (
         <>
-          {/* Render default marker */}
           <Marker
             position={center}
             map={map}
@@ -52,32 +71,40 @@ const MapPage = ({ selectedHazard }) => {
               url: 'icons/crash-marker.png',
               scaledSize: new window.google.maps.Size(50, 70),
             }}
-            onClick={handleMarkerClick} 
-          />
-          {/* Render selected hazard marker if a hazard is selected */}
-          {selectedHazard && (
-            <Marker
-              position={selectedHazard.coordinate}
-              map={map}
-              icon={{
-                url: customMarkerIcons[selectedHazard.type],
-                scaledSize: new window.google.maps.Size(50, 70),
-              }}
-              onClick={handleMarkerClick} 
-            >
-              {isInfoWindowOpen && (
-                <InfoWindow
-                  position={selectedHazard.coordinate}
-                  onCloseClick={handleInfoWindowClose}
-                >
-                  <div className={styles.infobox}>
-                    <h3>{selectedHazard.title}</h3>
-                    {/* You can add additional information here */}
-                  </div>
-                </InfoWindow>
-              )}
-            </Marker>
-          )}
+            onClick={handleDefaultMarkerClick} 
+          >
+            {isInfoWindowOpen && (
+              <InfoWindow
+                onCloseClick={handleInfoWindowClose}
+              >
+                <div className={styles.infobox}>
+                  <h3>Car Crash</h3>
+                  {<p>Car crash between two vehicles</p>}
+                </div>
+              </InfoWindow>
+            )}
+          </Marker>
+
+          <Marker
+            position={{ lat: 49.249214, lng: -122.999961 }}
+            map={map}
+            icon={{
+              url: NewMarkerIcon,
+              scaledSize: new window.google.maps.Size(50, 70),
+            }}
+            onClick={handleCustomMarkerClick} 
+          >
+            {isCustomMarkerInfoWindowOpen && (
+              <InfoWindow
+                onCloseClick={handleInfoWindowClose}
+              >
+                <div className={styles.infobox}>
+                  <h3>New Hazard</h3>
+                  {<p>Traffic Jam in Parking Lot</p>}
+                </div>
+              </InfoWindow>
+            )}
+          </Marker>
         </>
       )}
     </GoogleMap>

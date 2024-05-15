@@ -34,14 +34,10 @@ export default function Profile() {
 
               
              <div>
-<<<<<<< HEAD
-               <h2 className={`${styles.category}`}>
-=======
                <h2 className={`${styles.category}`}></h2>
               <br/>
 
               <h2 className={`${styles.category}`}>
->>>>>>> 1bf3b23fc66613708faf12e0f4903c67921684b8
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-settings.svg" width={24} height={24}/>
                 <div className={`${styles.categoryText}`}>Settings</div>
               </h2>

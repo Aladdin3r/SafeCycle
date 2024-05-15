@@ -10,11 +10,6 @@ const NearbyActivityCard = ({ title, imageUrl, description, distance, location, 
         setShowComments(!showComments);
     };
 
-    // const toggleCommentsTabbing = () => {
-    //     if (event.key === 'Enter') {
-    //         toggleComments();
-    // };
-
     const handleInputChange = (e) => {
         setNewComment(e.target.value);
     };

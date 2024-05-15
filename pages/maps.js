@@ -24,9 +24,9 @@ export default function Home() {
             <main className={styles.main}>
                 <div className={styles.container}>
                     <SearchBarButton onClick={togglePullPage} />
-                    <PullUpPage isVisible={pullPageVisible} toggleVisibility={togglePullPage} />
-                    <MapPage />
-                    <NavBar />
+                    <PullUpPage tabindex={-1} isVisible={pullPageVisible} toggleVisibility={togglePullPage} />
+                    <MapPage tabindex={-1}/>
+                    <NavBar tabindex={-1}/>
                 </div>
             </main>
         </>

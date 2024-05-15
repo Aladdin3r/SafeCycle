@@ -35,9 +35,6 @@ export default function Profile() {
               
              <div>
                <h2 className={`${styles.category}`}>
-              <br/>
-
-              <h2 className={`${styles.category}`}>
                 <Image className={`${styles.categoryIcon}`} src="/icons/profile-page-settings.svg" width={24} height={24}/>
                 <div className={`${styles.categoryText}`}>Settings</div>
               </h2>

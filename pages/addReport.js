@@ -13,7 +13,7 @@ export default function addReport() {
     const handleNextClick = () => {
         setNextClicked(true);
         router.push({
-            pathname: '/map', // Corrected pathname to match the map page route
+            pathname: '/map', 
             query: { description },
         });
     }

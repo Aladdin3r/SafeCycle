@@ -8,7 +8,7 @@ export default function Hazards() {
     return(
         <>
             <Head>
-                <title>SafeCycle – Community</title>
+                <title>SafeCycle – Hazards</title>
                 <meta name="description" content="Hazards Page" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon3.png" /> 

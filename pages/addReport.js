@@ -1,5 +1,5 @@
 import styles from "@/styles/NearbyActivity.module.css";
-import Head from "next/Head"
+import Head from "next/head";
 import Button from "@/components/Button";
 
 export default function addReport() {

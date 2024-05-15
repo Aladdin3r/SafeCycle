@@ -17,6 +17,7 @@ export default function Search() {
             <div className={styles.container}>
                 <SearchBarButton />
                 <TextButton />
+                <NavBar tabindex={-1}/>
             </div>
         </main>
         </>

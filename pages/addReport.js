@@ -30,18 +30,19 @@ export default function addReport() {
                         <p>Add description (optional)</p>
                     </div>
                     <div className={styles.buttonContainer}>
-                        <Button
-                            href="./nearbyActivity"
+                         <Button 
+                            href="./hazards"
                             label="Cancel"
                             width="183px"
                             style="secondary"
-                            tabIndex={3}
+                            onClick={() => router.push('/hazards')}
                         />
+                        
                         <Button 
-                            href="./"
-                            label="Next"
+                            href="./maps"
+                            label="Post"
                             width="183px"
-                            tabIndex={4}
+                            onClick={handleNextClick}
                         />
                     </div>
                 </div>

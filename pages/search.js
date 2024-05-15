@@ -1,6 +1,6 @@
-import NavBar from "@/components/NavBar";
 import styles from "@/styles/Home.module.css"
-import SearchBar from "@/components/SearchBar";
+import SearchBarButton from "@/components/SearchBar";
+import TextButton from "@/components/SearchBar"
 
 export default function Search() {
     return(
@@ -14,7 +14,7 @@ export default function Search() {
         </Head>
         <main>
             <div className={styles.container}>
-                <SearchBar />
+                <SearchBarButton />
                 <TextButton />
             </div>
         </main>

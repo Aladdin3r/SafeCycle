@@ -21,28 +21,28 @@ export default function NearbyActivity() {
                             title={"Car Crash"}
                             imageUrl={"/icons/car-crash-3D.svg"}
                             distance={"0.2 miles away"}
-                            location={"Parking Lot BCIT near Roper Ave"}
+                            location={"Parking Lot BCIT near Roper Ave (cyclist and car)"}
                             likeCount={35}
-                            commentCount={3}
+                            commentCount={2}
                             username={"@Jackdoe"}
                             comments={[
                                 { profilePicture: 'icons/profile-icon-orange.svg', username: 'User1', comment: 'Very useful thank you!' },
-                                { profilePicture: 'icons/profile-icon-pink.svg', username: 'User2', comment: 'I disagree with the main point.' },
+                                { profilePicture: 'icons/profile-icon-pink.svg', username: 'User2', comment: 'Poor cyclist, hope everyone is okay.' },
                             ]}
                             />
                         </div>
                         <br/>
                         <div>
                             <NearbyActivityCard 
-                            title={"Traffic Jam"}
-                            imageUrl={"/icons/traffic-3D.svg"}
+                            title={"Closure"}
+                            imageUrl={"/icons/closed-road-3D.svg"}
                             distance={"0.1 miles away"}
-                            location={"Roper Ave turning into Ford Ave"}
+                            location={"Pedestrian walkway closed near Roper"}
                             likeCount={12}
                             commentCount={1}
                             username={"@Jackdoe"}
                             comments={[
-                                { profilePicture: 'icons/profile-icon-orange.svg', username: 'User1', comment: 'Thank you!' },
+                                { profilePicture: 'icons/profile-icon-orange.svg', username: 'User1', comment: 'Thank you! Will keep an eye out!' },
                             ]}
                             />
                         </div>

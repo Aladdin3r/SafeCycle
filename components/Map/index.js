@@ -18,7 +18,7 @@ const center = {
 };
 
 const customMarkerIcon = '/icons/crash-marker.png';
-const NewMarkerIcon = '/icons/traffic-marker.png';
+const NewMarkerIcon = '/icons/closure-marker.png';
 
 const MapPage = ({ customMarkerDescription }) => {
   const { isLoaded } = useJsApiLoader({
@@ -79,7 +79,7 @@ const MapPage = ({ customMarkerDescription }) => {
               >
                 <div className={styles.infobox}>
                   <h3>Car Crash</h3>
-                  {<p>Car crash between two vehicles</p>}
+                  {<p>Car crash between bike and vehicle</p>}
                 </div>
               </InfoWindow>
             )}
@@ -100,7 +100,7 @@ const MapPage = ({ customMarkerDescription }) => {
               >
                 <div className={styles.infobox}>
                   <h3>New Hazard</h3>
-                  {<p>Traffic Jam in Parking Lot</p>}
+                  {<p>Pedestrian walkway closed</p>}
                 </div>
               </InfoWindow>
             )}

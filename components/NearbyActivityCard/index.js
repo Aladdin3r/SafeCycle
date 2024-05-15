@@ -10,6 +10,11 @@ const NearbyActivityCard = ({ title, imageUrl, description, distance, location, 
         setShowComments(!showComments);
     };
 
+    // const toggleCommentsTabbing = () => {
+    //     if (event.key === 'Enter') {
+    //         toggleComments();
+    // };
+
     const handleInputChange = (e) => {
         setNewComment(e.target.value);
     };
@@ -30,7 +35,7 @@ const NearbyActivityCard = ({ title, imageUrl, description, distance, location, 
                 </div>
                 <div className={styles.extraDetails}>
                     <img src={imageUrl} alt={title} className={styles.cardImage} />
-                    <a href='/maps'><h9>Tap to see on map</h9></a>
+                    <a href='/maps' tabIndex={2}><h9>Tap to see on map</h9></a>
                 </div>
             </div>
             <div className={styles.likesAndComments}>
@@ -38,7 +43,11 @@ const NearbyActivityCard = ({ title, imageUrl, description, distance, location, 
                     <Image src="/icons/like.svg" alt="Like Icon" width={20} height={20} />
                     <h8>{likeCount}</h8>
                 </div>
-                <div className={styles.comments} onClick={toggleComments}>
+                <div className={styles.comments} onClick={toggleComments} onKeyDown={(event) => {
+                    if (event.key === 'Enter') {
+                    toggleComments();
+                    }
+                 }}tabIndex={3}>
                     <Image src="/icons/comment.svg" alt="Comment Icon" width={20} height={20} />
                     <h8>{commentCount}</h8>
                 </div>

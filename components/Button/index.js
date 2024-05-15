@@ -15,7 +15,7 @@ const Button = ({ href, src, label, style, width }) => {
   return (
     <div className={styles.navigate}>
       <Link href={href}>
-        <button className={buttonClasses} style={buttonStyle}>
+        <button tabIndex={-1} className={buttonClasses} style={buttonStyle}>
           {src && <img src={src} alt={label} className={styles.icon} />}
           {label}
         </button>

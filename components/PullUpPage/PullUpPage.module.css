@@ -3,7 +3,7 @@
     bottom: -100%; 
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 430px;
     height: auto; 
     max-height: 60%; 
     transition: bottom 0.3s ease; 
@@ -47,4 +47,8 @@
     max-height: calc(100% - 45px); 
     overflow-y: auto;
     padding: 15px;
+}
+
+.filler {
+    padding-top: 30px;
 }

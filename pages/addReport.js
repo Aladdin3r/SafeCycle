@@ -30,7 +30,7 @@ export default function addReport() {
                         <p>Add description (optional)</p>
                     </div>
                     <div className={styles.buttonContainer}>
-                         <Button 
+                        <Button 
                             href="./hazards"
                             label="Cancel"
                             width="183px"

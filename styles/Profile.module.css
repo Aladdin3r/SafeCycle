@@ -54,6 +54,9 @@
         margin-left: 11px;
     }
 
+    .profileLink{
+        text-decoration: none;
+    }
     .selectorRectangle:hover {
         background-color: var(--button-color);
         color: white;

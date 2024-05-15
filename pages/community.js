@@ -18,8 +18,8 @@ export default function Community() {
                 <div className={styles.container}>
                     <Header title="Community"/>
                     <div className={styles.cards}>
-                        <Link href="./nearbyActivity">
-                            <button className={styles.cardButton}>
+                        <Link tabIndex={1} href="./nearbyActivity">
+                            <button tabIndex={-1} className={styles.cardButton}>
                                 <div className={styles.nearbyActivity}>
                                     <div className={styles.cardContainer}>
                                         <div className={styles.nearbyImage}>
@@ -30,8 +30,8 @@ export default function Community() {
                                 </div>
                             </button>
                         </Link>
-                        <Link href="./faq">
-                            <button className={styles.cardButton}>
+                        <Link tabIndex={2} href="./faq">
+                            <button tabIndex={-1} className={styles.cardButton}>
                                 <div className={styles.nearbyActivity}>
                                     <div className={styles.cardContainer}>
                                         <div className={styles.nearbyImage}>
@@ -42,8 +42,8 @@ export default function Community() {
                                 </div>
                             </button>
                         </Link>
-                        <Link href="./graph">
-                            <button className={styles.cardButton}>
+                        <Link tabIndex={3} href="./graph">
+                            <button tabIndex={-1} className={styles.cardButton}>
                                 <div className={styles.nearbyActivity}>
                                     <div className={styles.cardContainer}>
                                         <div className={styles.nearbyImage}>

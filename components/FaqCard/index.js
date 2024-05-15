@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import styles from './FaqCard.module.css'; 
 import Image from 'next/image';
 
-const FaqCard = ({ title, imageUrl, description, distance, location, likeCount, commentCount, comments, answer }) => {
+
+let tabIndexCounter = 2;
+
+const FaqCard = ({ title, imageUrl, description, distance, location, likeCount, commentCount, comments, answer, tabindex }) => {
     const [showComments, setShowComments] = useState(false);
     const [newComment, setNewComment] = useState('');
+    const tabIndex = tabIndexCounter++;
 
     const toggleComments = () => {
         setShowComments(!showComments);
@@ -20,7 +24,7 @@ const FaqCard = ({ title, imageUrl, description, distance, location, likeCount, 
     };
 
     return (
-        <div className={styles.cardContainer}>
+        <div className={styles.cardContainer} tabIndex={tabIndex}>
             <div className={styles.information}>
                 <div className={styles.cardContent}>
                     <h2 className={styles.cardTitle}>{title}</h2>

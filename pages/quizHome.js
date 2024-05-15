@@ -10,7 +10,7 @@ export default function QuizHome() {
     return(
         <>
             <Head>
-            <title>SafeCycle</title>
+            <title>SafeCycle - Quiz</title>
             <meta name="description" content="Home Page" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon3.png" />
@@ -29,6 +29,7 @@ export default function QuizHome() {
                         <Button 
                             href="./questionOne"
                             label="Take Quiz"
+                            width="372px"
                         />
                     </div>
                 </div>

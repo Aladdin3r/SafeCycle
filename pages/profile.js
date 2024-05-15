@@ -34,7 +34,7 @@ export default function Profile() {
 
               
              <div>
-               <h2 className={`${styles.category}`}>
+               <h2 className={`${styles.category}`}></h2>
               <br/>
 
               <h2 className={`${styles.category}`}>

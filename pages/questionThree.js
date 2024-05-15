@@ -39,6 +39,7 @@ export default function QuestionThree() {
                     href="./questionFour"
                     label="Submit Answer"
                     disabled={answerStatus === null}
+                    width="372px"
                 />
             </div>
         </>

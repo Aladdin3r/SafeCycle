@@ -15,3 +15,39 @@
     flex-direction: column;
     align-items: center;
   }
+
+/* Add Report Container */
+
+.addReportContainer {
+  width: 430px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textArea {
+  width: 372px;
+  height: 157px;
+  background-color: var(--grey);
+  border: none;
+  resize: none;
+  font-family: Urbanist;
+  color: var(--text-color-dark);
+  border-radius: 7px;
+}
+

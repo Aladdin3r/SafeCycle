@@ -1,21 +1,24 @@
-import NavBar from "@/components/NavBar";
 import styles from "@/styles/Home.module.css"
-import SearchBar from "@/components/SearchBar";
+import SearchBarButton from "@/components/SearchBar";
+import TextButton from "@/components/SearchBar"
+import Head from "next/head";
+import NavBar from "@/components/NavBar";
 
 export default function Search() {
     return(
         <>
         <Head>
-            <title>SafeCycle - Search</title>
-            <meta name="description" content="SafeCycle is your ultimate pedestrian safety and navigation app. 
+            <title>SafeCycle - Search Page</title>
+            <meta name="description" content="Search Page. SafeCycle is your ultimate pedestrian safety and navigation app. 
             Find the best and most recent routes and navigate your day without hazards." />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon3.png" />
         </Head>
         <main>
             <div className={styles.container}>
-                <SearchBar />
+                <SearchBarButton />
                 <TextButton />
+                <NavBar tabindex={-1}/>
             </div>
         </main>
         </>

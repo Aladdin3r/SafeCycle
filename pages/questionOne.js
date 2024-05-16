@@ -7,7 +7,16 @@ import Button from "@/components/Button";
 
 export default function QuestionOne() {
     const currentQuestion = questions[0];
+    const [answerSelected, setAnswerSelected] = useState(false);
     const [answerStatus, setAnswerStatus] = useState(null);
+
+    const handleAnswerSelection = () => {
+        setAnswerSelected(true);
+    };
+
+    const handleNext = (isCorrect) => {
+        setAnswerStatus(isCorrect);
+    };
 
     return (
         <>
@@ -22,8 +31,9 @@ export default function QuestionOne() {
                             option={String.fromCharCode(65 + index)}
                             text={choice}
                             correctAnswer={currentQuestion.correctAnswer}
-                            onNext={(isCorrect) => setAnswerStatus(isCorrect)}
+                            onNext={handleNext}
                             lesson={currentQuestion.lesson}
+                            onAnswerSelect={handleAnswerSelection}
                         />
                     ))}
                 </div>
@@ -38,11 +48,10 @@ export default function QuestionOne() {
                 <Button 
                     href="./questionTwo"
                     label="Submit Answer"
-                    disabled={answerStatus === null}
+                    disabled={!answerSelected}  
                     width="372px"
                 />
             </div>
         </>
     );
 }
-

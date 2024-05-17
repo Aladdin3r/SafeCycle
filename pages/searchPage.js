@@ -1,5 +1,6 @@
 import styles from "@/styles/SearchPage.module.css";
 import NavBar from "@/components/NavBar";
+import SearchBar from "@/components/SearchBar";
 
 export default function searchPage() {
     return (

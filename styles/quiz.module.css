@@ -57,14 +57,15 @@
     align-items: center; 
     padding-bottom: 35px;
 }
-/* Quiz Home */
 
+/* Quiz Home */
 
 .quizHomeContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .quizHomeTitle {
@@ -127,5 +128,5 @@
     justify-content: space-between;
     align-items: center;
     padding: 6rem;
-    min-height: 20vh;
+    min-height: 35vh;
   }

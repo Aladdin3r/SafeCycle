@@ -2,6 +2,7 @@ import styles from "@/styles/Home.module.css"
 import SearchBarButton from "@/components/SearchBar";
 import TextButton from "@/components/SearchBar"
 import Head from "next/head";
+import NavBar from "@/components/NavBar";
 
 export default function Search() {
     return(

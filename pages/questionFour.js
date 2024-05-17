@@ -7,7 +7,16 @@ import Button from "@/components/Button";
 
 export default function QuestionFour() {
     const currentQuestion = questions[3];
+    const [answerSelected, setAnswerSelected] = useState(false);
     const [answerStatus, setAnswerStatus] = useState(null);
+
+    const handleAnswerSelection = () => {
+        setAnswerSelected(true);
+    };
+
+    const handleNext = (isCorrect) => {
+        setAnswerStatus(isCorrect);
+    };
 
     return (
         <>
@@ -22,8 +31,9 @@ export default function QuestionFour() {
                             option={String.fromCharCode(65 + index)}
                             text={choice}
                             correctAnswer={currentQuestion.correctAnswer}
-                            onNext={(isCorrect) => setAnswerStatus(isCorrect)}
+                            onNext={handleNext}
                             lesson={currentQuestion.lesson}
+                            onAnswerSelect={handleAnswerSelection}
                         />
                     ))}
                 </div>
@@ -38,7 +48,7 @@ export default function QuestionFour() {
                 <Button 
                     href="./endPage"
                     label="Submit Answer"
-                    disabled={answerStatus === null}
+                    disabled={!answerSelected}  
                     width="372px"
                 />
             </div>

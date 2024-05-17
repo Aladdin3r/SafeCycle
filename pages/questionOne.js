@@ -46,7 +46,7 @@ export default function QuestionOne() {
             )}
             <div className={styles.navigate}>
                 <Button 
-                    href="./questionTwo"
+                    href="./resultPage"
                     label="Submit Answer"
                     disabled={!answerSelected}  
                     width="372px"

@@ -10,13 +10,11 @@ export default function Header({ title, showBackButton }) {
 
     return (
         <div className={styles.container}>
-            <div className={styles.back}>
-                {showBackButton && (
-                    <button onClick={goBack} tabIndex={1} className={styles.backButton}>
-                        <img src="/icons/back-button.svg" className={styles.backIcon}/>
-                    </button>
-                )}
-            </div>
+            {showBackButton && (
+                <button onClick={goBack} tabIndex={1} className={styles.backButton}>
+                    <img src="/icons/back-button.svg" className={styles.backIcon} alt="Back" />
+                </button>
+            )}
             <div className={styles.title}>
                 <h1>{title}</h1>
             </div>

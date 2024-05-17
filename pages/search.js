@@ -13,7 +13,7 @@ export default function Search() {
             <meta name="description" content="Search Page. SafeCycle is your ultimate pedestrian safety and navigation app. 
             Find the best and most recent routes and navigate your day without hazards." />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="/favicon3.png" />
+            <Link rel="icon" href="/favicon3.png" />
         </Head>
         <main>
             <div className={styles.container}>

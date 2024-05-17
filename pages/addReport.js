@@ -27,7 +27,7 @@ export default function addReport() {
             </Head>
             <main className={`${styles.main}`}>
                 <div className={styles.addReportContainer}>
-                    <Header title="App A Report" showBackButton={true}/>
+                    <Header title="Add a report" showBackButton={true}/>
                     
                     <div className={styles.descriptiontitle}>
                         <h1>Describe Hazard</h1>

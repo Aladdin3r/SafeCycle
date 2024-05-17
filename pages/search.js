@@ -3,6 +3,7 @@ import SearchBarButton from "@/components/SearchBar";
 import TextButton from "@/components/SearchBar"
 import Head from "next/head";
 import NavBar from "@/components/NavBar";
+import Link from "next/link";
 
 export default function Search() {
     return(
